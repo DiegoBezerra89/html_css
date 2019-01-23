@@ -8,26 +8,30 @@
     <meta name="description" content="Sobre position, relative e absolute">
     <meta name="keywords" content="HTML, position, relative, absolute">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Lobster|Montserrat|Playfair+Display|Quicksand" rel="stylesheet">
     <title>Aula 11 | Projeto Fashion</title>
 </head>
 <body>
+    <div id="principal">
     <header class="mainHeader">
         <div class="mainHeaderTag">
             <img class="logotipo" src="images/logo.png" alt="">
-            <ul class="mainHeaderUl">
-                <li class="mainHeaderLi">
-                    <a href="#">Portfolio</a>
-                </li>
-                <li class="mainHeaderLi">
-                    <a href="#">About us</a>
-                </li>
-                <li class="mainHeaderLi">
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
+            <nav>
+                <ul class="mainHeaderUl">
+                    <li class="mainHeaderLi">
+                        <a href="#">Portfolio</a>
+                    </li>
+                    <li class="mainHeaderLi">
+                        <a href="#">About us</a>
+                    </li>
+                    <li class="mainHeaderLi">
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
         </div>   
-        <img class="imgHeader" src="images/topo.jpg" alt="Modelo feminina segurando as pernas">
     </header>
+    <img class="imgHeader" src="images/topo.jpg" alt="Modelo feminina segurando as pernas">
     <main>
         <section class="portifolio">
             <h2>New Fashion Everything Never Enough</h2>
@@ -39,27 +43,28 @@
                 Maecenas fringilla hendrerit enim malesuada laoreet. Aenean quis tortor a odio tempus tincidunt.
                 Vivamus rutrum nulla sed metus congue bibendum. Sed ut aliquam purus. Donec odio mauris, commodo sed dignissim vitae, dapibus eget mauris.
             </p>
-            <article id="gallery"><!--Deu MERDA, favor arrumar!-->
-                <div class="galleryCard">
-                    <img class="galleryImg" src="images/modelo1.jpg" alt="Modelo">
-                    <p>Vest Romasa 
-                    Strong & charismatic</p>
+            <article id="gallery">
+                <div class="galleryCard card">
+                    <img src="images/modelo1.jpg" alt="Modelo">
+                    <p><b>Vest Romasa</b><br> 
+                    Strong Charismatic</p>
                 </div>
-                <div class="galleryCard">
-                    <img class="galleryImg" src="images/modelo2.jpg" alt="Modelo">
-                    <p>Jacket Fima
-                    Strong Sersonality</p>
+                <div class="galleryCard card">
+                    <img src="images/modelo2.jpg" alt="Modelo">
+                    <p><b>Jacket Fima</b><br>
+                    Strong Personality</p>
                 </div>
                 <div class="galleryCard">    
-                    <img class="galleryImg" src="images/modelo3.jpg" alt="Modelo">
-                    <p>Jacket Black Kira 
+                    <img src="images/modelo3.jpg" alt="Modelo">
+                    <p><b>Jacket Black Kira</b><br> 
                     Power Fascinating</p>
                 </div>
             </article>
         </section>
         <section class="about">
-            <h2>Everything Never Enough</h2>
-            <h2>Just Fashion</h2>
+            <div class="aboutText">
+            <h2>Everything Never Enough<br>
+                Just Fashion</h2>
             <p>
                 Praesent placerat eros eget lacus ullamcorper, id dapibus ante vestibulum. Curabitur quis condimentum diam. 
                 Duis aliquet erat vel laoreet tincidunt. Pellentesque vitae varius ligula. Phasellus in nibh tempus, gravida justo et, 
@@ -67,17 +72,20 @@
                 Curabitur nec magna urna. Sed porta ex ex, at pulvinar nibh aliquet quis. 
                 Integer dapibus congue vestibulum. Phasellus bibendum lobortis quam, nec sollicitudin nisl volutpat at.
             </p>
+            </div>
         </section>
         <section class="contact">
                 <h3>Call me now for design<br>
                     012-1234-4567</h3>
                 <article class="map">
-
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.083519406025!2d-46.65357928468825!3d-23.565443684680925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59b88724d473%3A0xfa9749a1a0a78867!2sAv.+Paulista%2C+900!5e0!3m2!1spt-BR!2sbr!4v1548269171273" width="100%" height="450" frameborder="0" style="border:0"  allowfullscreen></iframe>
                 </article>
         </section>
     </main>
     <footer>
         <p>Copyright &copy; fastfashion.com</p>
     </footer>    
+    <p><a href="../aula10/index.html">&lt;&lt;Voltar</a> | <a href="../aula12/index.html">Avançar &gt;&gt;</a><br><br></p>
+    </div>
 </body>
 </html>

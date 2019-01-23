@@ -1,22 +1,23 @@
 body{
-    font-family: sans-serif;
+    font-family: tahoma, arial, sans-serif;
     background-color: rgb(255, 255, 255);
     width: 80%;
     margin: auto;
 }
 
+#principal{
+    margin-top: 40px;
+}
+
 .mainHeader{
     width: 100%;
-    margin-top: 20px;
-    margin-bottom: 0px;
 }
 
 .mainHeaderTag{
+    height:70px;
     width: 100%;
     padding: 10px;
     background-color: rgb(4, 14, 22);
-    display: inline-block;
-    margin: 0px;
     box-sizing: border-box;
     position: relative;
 }
@@ -53,23 +54,91 @@ body{
 
 .imgHeader{
     width: 100%;
+    display: inline-block;
+    margin-top: 0;
 }
 
 .portifolio{
     margin: auto;
-    width: 70%;
     text-align: center;
     color: rgb(4, 33, 56);
+    width: 75%;
+}
+
+.portifolio p{
+    font-size: 16px;
+    line-height: 2;
 }
 
 .portifolio h2{
     font-weight: bolder;
+    margin-top: 80px;
+    font-size: 30px;
 }
 
 #gallery{
-    width: 100%;
+    margin-top: 80px;
+    overflow: auto;
 }
 
 .galleryCard{
     float: left;
+    width: 32%;
+}
+
+.galleryCard img{
+    width: 100%;
+    display: block;
+}
+
+.card{
+    margin-right: 2%;
+}
+
+.about{
+    height: 500px;
+    background-image: url(../images/bg_detalhe.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-color: rgb(0,61,82);
+    color: rgb(247, 247, 247);
+    margin-top: 80px;
+}
+
+.aboutText{
+    width: 60%;
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+.aboutText h2{
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+.aboutText p{
+    letter-spacing: 2px;
+    width: 70%;
+}
+
+.contact{
+    text-align: center;
+    color: rgb(4, 33, 56);
+    margin-top: 80px;
+}
+
+.map{
+    margin-top: 80px;
+}
+
+footer{
+    height: 80px;
+    background-color: rgb(4, 33, 56);
+    margin-bottom: 80px;
+    margin-top: 80px;
+    color: rgb(85, 122, 155);
+    text-align: center;
+    line-height: 80px;
 }
