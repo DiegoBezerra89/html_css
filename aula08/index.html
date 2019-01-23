@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Diego Bezerra">
+    <meta name="description" content="Layout HTML">
+    <meta name="keywords" content="layout, estrutura, HTML">
+    <link rel="stylesheet" href="style.css">
+    <title>Aula 08 | Layout</title>
+</head>
+<body>
+    <h1>Layout</h1><hr>
+    <h2>Tags semânticas</h2>
+    <p>
+        <h4>&lt;header&gt;</h4> utilizada para determinar qual conteúdo fará parte do cabeçalho da página.
+        <h4>&lt;nav&gt;</h4> utilizada para determinar o setor onde fica a navegação do site, como o menu.
+        <h4>&lt;main&gt;</h4> Utilizada para determinar o setor principal da página, que conterá as informações mais relevantes.
+        <h4>&lt;footer&gt;</h4> Utilizada para determinar o setor de rodapé da página;
+    </p><hr>
+    <h2>Tags de estrutura</h2>
+    <p>
+        <h4>&lt;div&gt;</h4> (não possui utilidade semântica) faz uma espécie de divisória de conteúdo, onde é possível formatar cada uma especificamente.
+        <h4>&lt;section&gt;</h4> utilizada para dividir o conteúdo em seções relevantes, ideal para uma melhor organização da página e do código.
+        <h4>&lt;article&gt;</h4> utilizada para seções de conteúdo principal, com conteúdo específico, como o próprio nome diz, um artigo
+        <h4>&lt;aside&gt;</h4> utilizada para conteúdo que seja à parte do conteúdo principal, como a propaganda por exemplo. O que está lá não faz parte do conteúdo principal.
+        <h3>Exemplo:</h3>
+        <img src="images/img_sem_elements.gif" alt="imagem com o layout semântico HTML">
+        <h3>Exemplo mais complexo</h3>
+        <img src="images/layout.png" alt="exemplo de layout html semântico complexo"><hr>
+    </p><br><hr>
+    <section class="float">
+        <h2>Float</h2>
+        <p>
+            Controla a posição e o fluxo dos elementos na página.
+            Tendo em vista que os elementos em bloco são caixas.
+        </p>
+        <div id="container1">
+            <div class="div1">
+                    <p>
+                            <code>
+                                .DIV1<br>
+                                float: none;<br>
+                                background: rgb(252, 77, 214);<br>
+                                width: 200px;<br>
+                                height: 200px;<br>
+                            </code>
+                        </p>
+            </div>
+            <div class="div2">
+                    <p>
+                            <code>
+                                .DIV2<br>
+                                float: right;<br>
+                                background: rgb(47, 179, 255);<br>
+                                width: 200px;<br>
+                                height: 200px;<br>
+                            </code>
+                        </p>
+            </div>
+            <div class="div3">
+                    <p>
+                            <code>
+                                .DIV3<br>
+                                float: none;<br>
+                                background: greenyellow;<br>
+                                width: 100px;<br>
+                                height: 100px;<br>
+                            </code>
+                        </p>
+            </div>
+        </div>
+        <p>
+            O bloco acima possui um width de 500px e height de 500px.<br>
+            É como se fossem camadas do Photoshop.<br>
+            <em>OBS:</em> assim que se coloca um float, o elemento deixa de fazer parte do elemento pai, que não mais o considera e gera um tamanho sem ele.<br>
+            Elementos com Float se etendem e participam da mesma camada, se encaixam de maneira ordenada.<br>
+            
+        </p>
+    </section><br><br>
+    <h4>Layout de Exercício</h4>
+    <p>Desenvolver uma página baseada no layout abaixo:</p>
+    <img src="images/Screenshot.png" alt="layout para exercício"><hr>
+    <a href="../aula07/index.html">&lt;&lt;Voltar</a> | <a href="../aula09/index.html">Avançar &gt;&gt;</a>
+</body>
+</html>

@@ -1,0 +1,109 @@
+body{
+    font-family: sans-serif;
+    background: #ccc;
+    margin: 0; /*retira as margens laterais*/
+}
+
+.hero{
+    background-image: url(../images/bg-3.jpg);
+    height: 600px;
+    background-position: right center;
+    background-size: cover; /*imagem ocupa a área toda, mesmo q esconda um pouco da imagem*/
+    border-top: 1px solid transparent; /*Faz com q o hero encoste na borada superior, além de criar uma referência aos elementos filhos*/
+}
+
+.hero nav ul{
+    text-align: right;
+    margin-right: 30px;
+}
+
+.navLi{
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.801);
+    background-color: rgba(128, 128, 128, 0.562);
+    color: rgba(255, 255, 255, 0.801);
+    text-transform: uppercase;
+    margin: 10px 10px 0px 0px; /*tem como referência a classe .hero, border-top.*/
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+
+.navLi:hover{
+    background-color: rgba(102, 102, 102, 0.637);
+    color: white;
+    box-shadow: 2px 2px 2px grey;
+}
+
+.heroContent{
+    text-align: center;
+    color: white;
+    margin-top: 200px;
+}
+
+.heroContent h1{ /*desta maneira eu formato as tags dentro de uma classe específica, termo correto é desecendente, como por herança*/
+    font-size: 50px;
+    text-shadow: 1px 1px 3px black; /*text-shadow: deslocamento x, deslocamento y, esfumaçamento, cor*/ 
+    text-transform: uppercase;
+}
+
+.heroContent p{
+    background-color: rgba(0, 0, 0, 0.671);
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+    border-bottom: 2px solid white;
+}
+
+main{ /*pode-se utilizar a própria tag, pois por padrão só existe uma tag main*/
+    width: 80%;
+    margin: auto; /*centraliza o conteúdo*/
+}
+
+.cards{
+    float: left;
+    width: 32%;
+}
+
+.cards img{
+    width: 100%; /*ocupa 100% do elemento cards*/
+    display: block; /*Assim fica sem margem, dando pra encostar o p*/
+}
+
+.cards p{
+    background-color: #666;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px;
+    margin: 0px;
+}
+
+.card{
+    margin-right: 2%; /*Deixa 100% do espaço preenchido, sendo que somente os dois primeiros cards recebem esta propriedade*/
+}
+
+.contentSection{
+    background-color: white;
+    padding: 15px;
+    margin-top: 20px;
+    overflow: auto;
+}
+
+.text h2{
+    background-color: rgb(202, 202, 202);
+    border-bottom: 2px solid #666;
+    padding: 10px;
+}
+
+.mainFooter{
+    height: 150px;
+    text-align: center;
+    background-color: rgb(85, 85, 85);
+    color: white;
+    margin-top: 20px;
+    line-height: 150px; /*centraliza o texto, mas só por que o texto tem uma linha só, isso é um esquema.*/
+    text-shadow: 1px 1px 1px black;
+}
+
+

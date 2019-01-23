@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Display Block ou Inline</title>
+</head>
+<body>
+    <h1>Display</h1><hr>
+<section class="display">
+    <article class="displayBlock">
+        <h2>Display Block</h2>
+        <p>
+            Elementos de bloco se comportam como se fossem caixas na página,
+            ocupam 100% do espaço disponível e são dispostos um embaixo do outro, gera quebra de linha.<br>
+            É possível aplicar formatações de box model.<br>
+            <code>
+                &lt;p&gt;<br>
+                &lt;h1&gt; ... &lt;h6&gt;<br>
+                &lt;ul&gt;<br>
+                &lt;li&gt;<br>
+                &lt;footer&gt;<br>
+            </code>
+            etc.
+        </p>
+    </article>
+    <article class="displayInline">
+        <h2>Display Inline</h2>
+        <p>
+            Elementos de linha se comportam como se entrassem numa fila, 
+            ocupam seu espaço porém são dispostos em linha, ocupa o tamanho exato de seu conteúdo, um ao lado do outro.<br>
+            <code>
+                &lt;a&gt;<br>
+                &lt;strong&gt;<br>
+                &lt;em&gt;<br>
+                &lt;i&gt;<br>
+                &lt;span&gt;<br>
+                &lt;img&gt;<br>
+            </code>
+            etc.
+        </p>
+        <h3>Exemplo:</h3>
+        <img src="images/block-inline1.png" alt="Exemplo de disposição inline e block">
+        <p>
+            <code>
+                em{<br>
+                    display: inline-block; &lt;!-- desta forma eu transformo um elemento inline em um elemento block, sem gerar quebra de linha --&gt;<br>
+                }<br>
+
+                display: none; &lt;!-- Desabilita da tela um elemento -- &gt;
+            </code>
+        </p>
+    </article>
+</section>
+<section class="boxSizing">
+    <h2>Box-sizing</h2>
+    <p>
+        Esta propriedade é utilizada para definir ao navegador que o elemento bloco em questão tem a sua largura 
+        definida pela propriedade <i>width</i>, o <i>padding</i> a ser aplicado não aumentará a sua largura e altura, mas se enquadrará no espaço definido.
+    </p>
+    <div>
+        <p>
+            <code>
+                p {<br>
+                    width: 400px;<br>
+                    background-color: yellow;<br>
+                    padding: 300px;<br>
+                    height: 400px;<br> 
+                    color: rgb(48, 47, 47);<br>   
+                }
+            </code><br>
+        </p>
+    </div>
+    <p>O código acima é um exemplo de como o padding não influencia quando se tem a propriedade box-sizing.<br>
+            A caixa tem exatos 400px, mesmo com o padding de 100px;</p>
+</section>
+<style>
+    div{
+    width: 400px;
+    background-color: yellow;
+    padding: 100px;
+    height: 400px;      
+    color: rgb(48, 47, 47);
+    box-sizing: border-box;
+}
+</style>
+</body>
+</html>

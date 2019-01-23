@@ -1,0 +1,91 @@
+#container{
+    width: 400px;
+    height: 400px;
+    background-color: yellowgreen;
+}
+
+.div1{
+    width: 50%;
+    position: relative;
+    left: 30px;
+    top: 30px;  
+    background-color: aquamarine;   
+}
+
+.div2{
+    width: 50%;
+    position: static;
+    left: 30px;
+    top: 30px;  
+    background-color: rgb(4, 196, 132);   
+}
+
+.div3{
+    width: 50%;
+    position: static;
+    left: 30px;
+    top: 30px;  
+    background-color: rgb(18, 129, 92);   
+}
+
+#container2{
+    width: 400px;
+    height: 400px;
+    background-color: yellowgreen;
+    position: static; /*neste caso o elemento com o position absolute se referencia ao documento HTML*/
+}
+
+.div4{
+    width: 150px;
+    position: absolute;
+    right: 30px;
+    top: 30px;  
+    background-color: aquamarine;   
+}
+
+.div5{
+    width: 50%;
+    position: static;
+    left: 30px;
+    top: 30px;  
+    background-color: rgb(4, 196, 132);   
+}
+
+.div6{
+    width: 50%;
+    position: static;
+    left: 30px;
+    top: 30px;  
+    background-color: rgb(18, 129, 92);   
+}
+
+#container3{
+    width: 400px;
+    height: 400px;
+    background-color: yellowgreen;
+    position: relative; /*neste caso o elemento com o position absolute se referencia ao elemento pai*/
+}
+
+.div7{
+    width: 150px;
+    position: absolute;
+    right: 30px;
+    top: 30px;  
+    background-color: aquamarine;   
+}
+
+.div8{
+    width: 50%;
+    position: static;
+    left: 30px;
+    top: 30px;  
+    background-color: rgb(4, 196, 132);   
+}
+
+.div9{
+    width: 50%;
+    position: static;
+    left: 30px;
+    top: 30px;  
+    background-color: rgb(18, 129, 92);   
+}

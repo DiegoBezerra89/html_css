@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Diego Bezerra">
+    <meta name ="keywords" content="Box model, HTML">
+    <meta name="description" content="Conteúdo sobre Box model em CSS">
+    <link rel="stylesheet" href="style.css">
+    <title>Aula 05 | Pseudo Classes</title>
+</head>
+<body>
+    <h1 class="mainTitle">Pseudo Classes em links</h1><hr>
+    <p>
+        Utilizadas para a formatação de algumas tags, como por exemplo a tag "a", por padrão o browser deixa o link azul e sublinhado.<br>
+        <ul>
+        <code>
+            <li>a:link {atributos} &lt;!--Como o link será formatado antes de ser clicado--&gt;</li>
+            <li>a:hover {atributos} &lt;!--Como o link será formatado ao passar o mouse sobre ele--&gt;</li>
+            <li>a:visited {atributos} &lt;!--Como o link será formatado depois de já ter sido clicado--&gt;</li>
+            <li>a:active {atributos} &lt;!--Como o link será formatado enquanto está sendo clicado--&gt;</li>
+        </code>
+        </ul>
+    </p>
+    <p><b>Links formatados:</b><br>
+        <code>a:hover{<br>
+                color:white;<br>
+                background-color: blue;<br>
+            }<br><br>
+            
+            a:visited{<br>
+                color:red;<br>
+                background-color: aqua;<br>
+                text-transform: uppercase;<br>
+            }<br><br>
+            
+            a:link{<br>
+                text-decoration: none;<br>
+            }<br><br>
+            
+            a:active{<br>
+                border-bottom: 14px;<br>
+                border-color: blueviolet;<br>
+            }<br><br></code> 
+    </p>
+    <a href="../aula05/index.html">&lt;&lt;Voltar</a> | <a href="../aula06/index.html">Avançar &gt;&gt;</a>
+</body>
+</html>

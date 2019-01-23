@@ -1,0 +1,28 @@
+#container1{
+    width: 500px;
+    height: 500px;
+    float: none;
+    background: blueviolet;
+}
+
+.div1{
+    float: none;
+    background: rgb(252, 77, 214);
+    width: 200px;
+    height: 200px;
+}
+    
+.div2{
+    float: right;
+    background: rgb(47, 179, 255);
+    width: 200px;
+    height: 200px;
+}
+
+.div3{
+    float: none;
+    background: greenyellow;
+    width: 200px;
+    height: 200px;
+}
+

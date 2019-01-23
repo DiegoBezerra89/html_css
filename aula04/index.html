@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aula - 04 | CSS</title>
+</head>
+<body>
+    <h1>CSS | Cascading Style Sheets</h1><hr>
+    <p>
+    <h2>Definição</h2>
+        Arquivos responsáveis pela formatação e estilização dos elementos HTML, 
+        utiliza de classes e Ids para se referir a determinadas seções e elementos da página.<br><br>
+        <b>Sintaxe:</b> seletor { propriedade: valor;}<br>
+        Seletor h1 { color: valor;}<br><br><hr>
+    </p>
+    <p>   
+        <h3>Declarações</h3>
+        <ul>
+            <li><b>Inline</b>: junto com o código html se coloca o atributo style na tag que deseja formatar, este método não é correto.</li>
+            <li><b>Interno</b>: No arquivo html vc coloca a tag style e determina a CSS no mesmo código, o que torna o código maior e faz uso desnecessário de espaço</li>
+            <li><b>Externo</b>: Referência a arquivo externo, o que torna a manutenção mais fácil e o código fica mais limpo. <b>(Maneira Correta!)</b></li>
+        </ul><hr>
+    </p>    
+    <p>    
+        <h3>Seletores de Elemento</h3>
+        Pode-se referir-se ao elemento diretamente:<br>
+        <code>
+            p {color: green;}
+        </code><br>
+        Desta forma vc formata todos os elementos "p" da página.<br><br>
+        Há também maneiras de personalizar a formatação, por meio da criação de classes e Ids para os elementos:<br><br>
+        <b>por exemplo:</b>
+        <code>&lt;p class="paragrafo01"&gt;</code> Desta meneira vc cria uma especificação para os paragrafos que contem a classe "paragrafo01"<br>
+        No CSS:<br>
+        <code>.paragrafo01 {color: blue}</code><br><br>
+        <code>&lt;p id="paragrafo01"&gt;</code> Desta maneira vc cria uma especificação para um id, que é único por página.<br>
+        No CSS:<br>
+        <code>#paragrafo01 {color: blue}</code><hr>
+    </p>
+    <p>
+        <h3>Propriedades</h3>
+        <b>Font:</b>
+        <ul>
+            <li>font-family: especifica a família da fonte em questão, Sans-serif, serif, etc.</li>
+            <li>font-size: especifica o tamanho da fonte</li>
+            <li>font-style: especifica o estilo da fonte</li>
+            <li>font-variant: modifica a meneira de escrita</li>
+            <li>font-weight: largura da fonte</li>
+        </ul>
+        <b>text:</b>
+        <ul>
+            <li>text-allign: alinhamento do texto em relação ao elemento em que está inserido</li>
+            <li>text-decoration: sublinhado, negrito, itálico, etc.</li>
+            <li>text-indent: indentação do texto</li>
+            <li>text-transform: maiúsculo, minúsculo, etc.</li>
+            <li>color: cor da fonte.</li>
+        </ul>
+    </p><hr>
+    <p>
+        <h3>Modos de cor:</h3>
+        <b>RGB</b>: Red, green, blue<br>
+        Descrição: #FFF000 (seis digitos hexadecimais que representam as cores);<br>
+    </p><hr>
+    <p>
+        <h3>Exercício:</h3>
+        Praticar um pouco do que foi ensinado até o momento, formatação e estrutura.<br>
+        <a href="exercicio.html" target="_blank">Link para exercício</a>
+    </p>
+    <a href="../aula03/index.html">&lt;&lt;Voltar</a> | <a href="../aula05/index.html">Avançar &gt;&gt;</a>
+</body>
+</html>

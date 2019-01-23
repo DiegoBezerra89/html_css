@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(238, 238, 238);
+    color: #252525;
+    font-family: sans-serif;
+    width: 80%;
+    margin: auto;
+}
+
+h1{
+    background-color: rgb(23, 23, 70);
+    color: rgb(197, 235, 248);
+    text-align: center;
+    padding: 5px;
+}
+
+h2{
+    background-color: deepskyblue;
+    color: rgb(23, 23, 70);
+    padding: 3px;
+    border-bottom: solid 2px rgb(23, 23, 70);
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(94, 191, 255);
+}

@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(226, 225, 225);
+    font-family: sans-serif;
+    color: rgb(34, 34, 34);
+    width: 50%;
+    margin: auto;
+    background-image: url(images/bg.jpg);
+    /*background-repeat: no-repeat; - a imagem não se repete
+      background-size: tamanho da imagem em px
+      background-size: contain - pega o browser todo, porém visa o conteúdo da imagem, mesmo que a imagem se repita  
+      background-size: cover - pega a area inteira do browser mesmo que tenha q esconder um pedaço da imagem
+    */
+    background-attachment: fixed; /*anexa o background de maneira fixa*/
+    background-position: right bottom; /*imagem alinhada a direita e embaixo*/
+}
+
+/*#principal{
+    width: 90%;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgb(94, 93, 93);
+}*/
+
+.imgCss{
+    float: left; /*a imagem toma o lugar a esquerda do elemento abaixo dela, o texto tenta se adaptar a isso*/
+}
+
+.imgHtml{
+    float: right; /*a imagem toma o lugar a direita do elemento abaixo dela, o texto tenta se adaptar a isso*/
+}
+

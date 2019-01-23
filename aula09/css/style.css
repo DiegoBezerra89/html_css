@@ -1,0 +1,105 @@
+body{
+    font-family: sans-serif;
+    background-color: rgb(231, 231, 231);
+
+}
+
+#mainHeader{
+    height: 600px;
+    background-image: url(../images/bg-3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+.navLi{
+    width: 120px;
+    list-style: none;
+    display: inline-block;
+    border: 1px solid rgba(255, 255, 255, 0.61);
+    margin-right:20px;
+    padding: 7px;
+    color: rgba(255, 255, 255, 0.61);
+}
+
+.navLi:hover{
+    color: white;
+    border-color: white;
+}
+
+.navUl{
+    list-style: none;
+    text-align: center;
+    float: right;
+}
+
+.headerH1{
+    color: white;
+    font-size: 40px;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.692);
+    font-display: uppercase;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.headerH2{
+    color:white;
+    background-color: rgba(0, 0, 0, 0.534);
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0.61);
+    width: 400px;
+    padding: 7px;
+    text-align: center;
+}
+
+.cards{
+    width: 80%;
+    background-color: white;
+    margin: auto;
+    box-shadow: 2px 2px 3px rgba(116, 116, 116, 0.575); 
+}
+
+.cardsLi{
+    display: inline-block;
+    width: 30%;
+    margin-left: 20px;
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.cardsSub{
+    margin-top: 0px;
+    text-align: center;
+    background-color: #666;
+    padding: 20px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.texto{
+    width: 80%;
+    background-color: white;
+    margin: auto;
+    box-shadow: 2px 2px 3px rgba(116, 116, 116, 0.575); 
+}
+
+.textoH1{
+    background-color: rgb(202, 202, 202);
+    border-bottom: 2px solid grey;
+    padding: 10px;
+    margin: 20px;
+}
+
+.textoP{
+    text-align: left;
+    text-indent: 10px;
+}
+
+.mainFooter{
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    color: white;
+    background-color: rgb(26, 26, 34);
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Diego Bezerra">
+    <meta name="description" content="Sobre position, relative e absolute">
+    <meta name="keywords" content="HTML, position, relative, absolute">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Aula 10 | Position relative e absolute</title>
+</head>
+<body>
+    <header>
+        <h1>Position - relative e absolute</h1>
+    </header>
+    <main>
+        <section class="define">
+            <p>Esta diretriz faz referência à posição do objeto na tela:<br>
+                <code>
+                    div{<br>
+                        position: static; &lt;!-- Padrão, onde os objetos são postos em ordem, um abaixo do outro, inline ou block.--&gt;<br>
+                    }
+                </code>
+            </p>
+            <p>
+                No caso de <em>relative</em> e <em>absolute</em>, as diretrizes trabalham com os parâmetros left e right, pois elas tem referência a elas mesmas ou a outro objeto.<br>    
+            </p>
+            <div id="container">
+                <div class="div1">
+                    <code>
+                        .div1{<br>
+                           position: relative;<br>
+                           left: 30px;<br>
+                           top: 30px;<br>  
+                           background: yellowgreen;   
+                        }
+                    </code>
+                </div>
+                <div class="div2">
+                        <code>
+                            .div2{<br>
+                            position: static;<br>
+                            left: 30px;<br>
+                            top: 30px;<br>  
+                            background: rgb(4, 196, 132);<br>     
+                            }
+                            </code>
+                </div>
+                <div class="div3">
+                        <code>
+                            .div3{<br>
+                            position: static;<br>
+                            left: 30px;<br>
+                            top: 30px;<br>  
+                            background: rgb(18, 129, 92);<br>   
+                            }
+                        </code>
+                </div>
+            </div>
+            <p>
+                Observe na imagem acima que foi aplicado a position: relative,
+                a posição do bloco é RELATIVA à ela mesma, deslocando-se a quantidade descrita nas propriedades.
+            </p>
+        <h3>position: absolute</h3><hr>
+        <p> 
+            O position: absolute, se relaciona sempre com o primeiro elemento pai posicionado na página.<br>
+            Se o elemento pai estiver com <code>position: static;</code> , o elemento com o position absolute se referencia ao documento HTML.<br>
+            Se o elemento pai estiver com <code>position: relative</code> ,  o elemento com position absolute se referencia ao elemento pai.   
+        </p>
+            <div id="container2">
+                <div class="div4">
+                    <code>
+                        .div4{<br>
+                           position: absolute;<br>
+                           right: 30px;<br>
+                           top: 30px;<br>  
+                           background: yellowgreen; 
+                           width: 150px;  
+                        }
+                    </code>
+                </div>
+                <div class="div5">
+                        <code>
+                            .div5{<br>
+                            position: static;<br>
+                            left: 30px;<br>
+                            top: 30px;<br>  
+                            background: rgb(4, 196, 132);<br>     
+                            }
+                            </code>
+                </div>
+                <div class="div6">
+                        <code>
+                            .div6{<br>
+                            position: static;<br>
+                            left: 30px;<br>
+                            top: 30px;<br>  
+                            background: rgb(18, 129, 92);<br>   
+                            }
+                        </code>
+                </div>
+            </div>
+            <h3>position: relative (pai) | position: absolute (filho)</h3>
+            <div id="container3">
+                    <div class="div7">
+                        <code>
+                            .div4{<br>
+                               position: absolute;<br>
+                               right: 30px;<br>
+                               top: 30px;<br>  
+                               background: yellowgreen; 
+                               width: 150px;  
+                            }
+                        </code>
+                    </div>
+                    <div class="div8">
+                            <code>
+                                .div5{<br>
+                                position: static;<br>
+                                left: 30px;<br>
+                                top: 30px;<br>  
+                                background: rgb(4, 196, 132);<br>     
+                                }
+                                </code>
+                    </div>
+                    <div class="div9">
+                            <code>
+                                .div6{<br>
+                                position: static;<br>
+                                left: 30px;<br>
+                                top: 30px;<br>  
+                                background: rgb(18, 129, 92);<br>   
+                                }
+                            </code>
+                    </div>
+                </div>
+            <h3>Fixed</h3>
+            <p>
+                Sempre posicionado com referência ao browser.
+            </p>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+
+    <a href="../aula09/correcaoCss.html">&lt;&lt;Voltar</a> | <a href="../aula11/index.html">Avançar &gt;&gt;</a><br><br>
+</body>
+</html>

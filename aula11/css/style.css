@@ -1,0 +1,75 @@
+body{
+    font-family: sans-serif;
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    margin: auto;
+}
+
+.mainHeader{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.mainHeaderTag{
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(4, 14, 22);
+    display: inline-block;
+    margin: 0px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.logotipo{
+    float: right;
+    position: absolute;
+    left: 30px;
+    top: 20px;
+}
+
+.mainHeaderUl{
+    float: right;
+    margin-right: 30px;
+}
+
+.mainHeaderLi{
+    display: inline;
+    letter-spacing: 2px;
+    font-size: 15px;
+    margin-left: 20px;
+    color: rgb(85, 122, 155);
+    text-decoration: none;
+}
+
+.mainHeaderLi a:link{
+    text-decoration: none;
+    color: rgb(85, 122, 155);
+}
+
+.mainHeaderLi a:hover{
+    color: white;
+}
+
+.imgHeader{
+    width: 100%;
+}
+
+.portifolio{
+    margin: auto;
+    width: 70%;
+    text-align: center;
+    color: rgb(4, 33, 56);
+}
+
+.portifolio h2{
+    font-weight: bolder;
+}
+
+#gallery{
+    width: 100%;
+}
+
+.galleryCard{
+    float: left;
+}

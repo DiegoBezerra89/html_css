@@ -1,0 +1,27 @@
+body{
+    background-color: chartreuse;
+    font-family: sans-serif;
+}
+
+h1{
+    color: green;
+    font-size: 40px;
+    background-color:purple;
+}
+
+p{
+    color: rgb(18, 30, 68);
+}
+
+.p01{
+    color: red;
+    font-size: 30px;
+    text-align: center;
+}
+
+#textoCentral{
+    color:blue;
+    font-family:serif;
+    font-size: 12px;
+    background-color: aquamarine;
+}
