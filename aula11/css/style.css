@@ -46,10 +46,12 @@ body{
 .mainHeaderLi a:link{
     text-decoration: none;
     color: rgb(85, 122, 155);
+    transition: color .3s linear; /*transition recebe 3 parametros: a propriedade que tende a ser modificada, o tempo, e o tipo de transição*/
 }
 
 .mainHeaderLi a:hover{
     color: white;
+
 }
 
 .imgHeader{

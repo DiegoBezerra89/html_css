@@ -1,0 +1,9 @@
+li ul{
+   height: 0px;
+   overflow: hidden;
+   transition: height .5s;
+}
+
+li:hover ul{
+    height: 40px;
+}
