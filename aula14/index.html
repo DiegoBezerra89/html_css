@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Diego Bezerra">
+    <meta name="description" content="Formulário em HTML e JS">
+    <meta name="keywords" content="forms, javascript, HTML">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Aula 14 | Formulários</title>
+</head>
+<body>
+    <header>
+        <h1>Formulários</h1><br>
+    </header>
+    <main>
+        <div>
+            <section class="text">
+                Faça uma Busca <!--Não semântico-->
+                <form action="pagina.php" method="GET"><!--form: referencia um formulário | action: página ou       servidor a ser enviado os dados | method="GET": envia os dados via url, utilizado para          informações não sensíveis | method="POST": envia dados via protocolo, utilizado para dados sensíveis como senhas, documentos, logins, etc -->
+                    <input type="text" name="q"> <!--input: coloca um elemento no form | type: determina qual o tipo de elemento; type="text": o elemento é do tipo texto | name: determina o nome do dado a ser enviado, como se fosse uma variável-->
+                    <input type="submit" value="ok"><!--type="submit": elemento do tipo botão de envio | value: conteúdo do botão-->
+                </form>
+            <p>
+                <code>
+                    &lt;form action="pagina.php" method="GET"&gt;<br>&lt;!--<b>form</b>: referencia um formulário | <b>action</b>: página ou servidor a ser enviado os dados | <b>method="GET"</b>: envia os dados via url, utilizado para informações não sensíveis | <b>method="POST"</b>: envia dados via protocolo, utilizado para dados sensíveis como senhas, documentos, logins, etc --&gt;<br><br>
+                    &lt;input type="text" name="q"&gt;<br> &lt;!--<b>input:</b> coloca um elemento no form | <b>type</b>: determina qual o tipo de elemento;<br> <b>type="text"</b>: o elemento é do tipo texto | <b>name</b>: determina o nome do dado a ser enviado, como se fosse uma variável--&gt;
+                </code>
+            </p>
+            <hr>
+            </section>
+            <section class="semantic">                    
+                <h2>Semântica</h2>
+                <p>
+                    É necessário ao usuário saber o que o campo deseja receber, qual o tipo de informação é necessária inserir nos inputs.<br>
+                    Há diversas ferramentas semânticas que facilitam as entradas de dados.<br>
+                    <h3>Label</h3>
+                    <code>
+                        &lt;label for="txtBusca"&gt; Faça uma busca &lt;/label&gt;<br>
+                        &lt;input type="text" name="q" id="txtBusca"&gt;<br>
+                    </code>
+                    Desta forma "Faça uma busca" se referencia semânticamente com o input em questao. Como a tag evidencia, é uma espécie de etiqueta.
+                </p>
+            </section><hr>
+            <section class="fieldset">
+            <h3>Fieldset</h3>
+            <p>
+                <code>
+                    &lt;form action="pagina.php" method="POST"&gt;<br>
+                    &lt;fieldset&gt;<br>
+                    &lt;legend&gt;Login&lt;/legend&gt;<br>
+                    &lt;label for="log"&gt;User:&lt;/label&gt;<br>
+                    &lt;input type="text" name="text" id="log"&gt;<br>
+                    &lt;label for="pass"&gt;Password:&lt;/label&gt;<br>
+                    &lt;input type="password" name="pass" id="pass"&gt;<br>
+                    &lt;/fieldset&gt;<br>
+                    &lt;input type="submit" value="Login"&gt;<br>
+                    &lt;/form&gt;
+                </code>
+            </p>
+            <p>O código acima representa este formulário:<br></p>
+            <form action="pagina.php" method="POST">
+                    <fieldset>
+                    <legend>Login</legend>
+                    <label for="log">User:</label> 
+                    <input type="text" name="text" id="log">
+                    <label for="pass">Password:</label>
+                    <input type="password" name="pass" id="pass">
+                    </fieldset>
+                    <input type="submit" value="Login">
+                    </form><hr>
+            </section>
+        </div>
+        <div>
+            <h3>Tipos de entradas de dados</h3>
+            <p><h4>input</h4>
+                <ul>
+                    <li>text</li>
+                    <li>password</li>
+                    <li>checkbox</li>
+                    <li>radio</li>
+                    <li>file</li>
+                    <li>hidden</li>
+                    <li>submit</li>
+                    <li>button</li>
+                    <li>reset</li>    
+                </ul>
+                <h4>input (HTML5)</h4><!--Acrescentam semântica ao código-->
+                <ul>
+                    <li>email</li>
+                    <li>tel</li>
+                    <li>url</li>
+                    <li>search</li>
+                    <li>number</li>
+                    <li>range</li>
+                    <li>date</li>
+                    <li>time</li>
+                    <li>color</li>    
+                </ul>
+            </p>
+        </div>
+        <div class="example">
+            
+        </div>
+    </main>
+    <footer>
+            <p><a href="../aula13/index.html">&lt;&lt;Voltar</a> | <a href="../aula15/index.html">Avançar &gt;&gt;</a><br><br></p>
+    </footer>
+</body>
+</html>
