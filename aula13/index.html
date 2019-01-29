@@ -11,7 +11,75 @@
     <title>Aula 13 | Tabelas</title>
 </head>
 <body>
+    <style>
+        table{
+            border: solid black 2px;
+            border-collapse: collapse;
+        }
 
+        td{
+            border: solid black 1px;
+            padding: 10px;
+        }
+
+        th{
+            background-color: greenyellow;
+            font-family: sans-serif;
+            border: black solid 1px;
+            padding: 10px;
+        }
+
+        .back{
+            background-color: cornflowerblue;
+        }
+
+        .front{
+            background-color: crimson;
+        }
+    </style>
+    <!--Aqui vai o codigo que eu tenho em casa e não commitei-->
+
+
+    <table>
+        <thead>
+            <th>Tipo do curso</th>
+            <th>Curso</th>
+            <th>Valor</th>
+        </thead>
+        <tfoot>
+            <tr>
+                <td  colspan="3">Valores sujeitos a alteração sem prévio aviso</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td rowspan="3" class="front">Frontend</td>
+                <td>HTML</td>
+                <td>R$1000,00</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>R$900,00</td>
+            </tr>
+            <tr>
+                <td>Javascript</td>
+                <td>R$1200,00</td>
+            </tr>
+            <tr>
+                    <td rowspan="3" class="back">Backend</td>
+                    <td>Java</td>
+                    <td>R$200,00</td>
+                </tr>
+                <tr>
+                    <td>Node.js</td>
+                    <td>R$1900,00</td>
+                </tr>
+                <tr>
+                    <td>PHP</td>
+                    <td>R$1000,00</td>
+                </tr>
+        </tbody>
+    </table>
 
     <p><a href="../aula11/index.html">&lt;&lt;Voltar</a> | <a href="../aula13/index.html">Avançar &gt;&gt;</a><br><br></p>
 </body>
