@@ -98,10 +98,19 @@
                     <li>time</li>
                     <li>color</li>    
                 </ul>
-            </p>
+            </p><hr>
         </div>
         <div class="example">
-            
+            <form method="POST" action="#">
+                <fieldset class="login">
+                    <legend>Login</legend>
+                    <label for="user">Digite seu usuário:</label>
+                    <input type="text" id="user" name="user" autofocus><!--autofocus: coloca o cursor do teclado diretamente no elemento ao carregar a página-->
+                    <label for="pass">Digite a senha:</label>
+                    <input type="password" name="pass" id="pass">
+                    <input type="submit" value="Login" class="btn">
+                </fieldset>
+            </form>
         </div>
     </main>
     <footer>
