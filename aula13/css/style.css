@@ -1,0 +1,12 @@
+table{
+    border: black 1px solid;
+}
+
+tr{
+    border: black 1px solid;
+}
+
+td{
+    text-align: center;
+    border: black 1px solid;
+}

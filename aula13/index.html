@@ -11,8 +11,77 @@
     <title>Aula 13 | Tabelas</title>
 </head>
 <body>
+    <section class="definition">
+        <h1>Tabelas</h1><hr>
+        <p>
+            Para criarmos tabelas precisamos de 3 tags, table, tr (table row, ou linha), td(table data).
+        </p>
+        <table>
+            <tr>
+                <td>1A</td> <td>1B</td>
+            </tr>
+            <tr>
+                <td>2A</td><td>2B</td>
+            </tr>
+        </table>    
+        <p>Observe que a tabela acima possui conteudo estruturado como tabela porém não possui formataçao gráfica ainda.<br>
+        </p>
+        <h3>Atributos: rolspan e colspan</h3>
+        <p>
+        <b>colspan:</b> permite o formato de uma linha da tabela, pode-se solicitar que a linha ocupe duas colunas por exemplo.
+        </p>
+        <table>
+            <tr>
+                <td colspan="2">1A</td> 
+            </tr>
+            <tr>
+                <td>2A</td><td>2B</td>
+            </tr>
+            <tr>
+                <td>3A</td><td>3B</td>
+            </tr>
+        </table>
+        <p>
+        <b>Rowspan:</b> permite formatar uma coluna, fazendo com que ela ocupe quantas linhas forem necessárias.
+        </p>
+        <table>
+            <tr>
+                <td rowspan="2">1A</td><td>1B</td><td>1C</td> 
+            </tr>
+            <tr>
+                <td>2A</td><td>2B</td>
+            </tr>
+            <tr>
+                <td>3A</td><td>3B</td><td>3C</td>
+            </tr>
+        </table><br>
+        <table>
+            <tr>
+                <td>1A</td><td rowspan="2">1B</td><td>1C</td> 
+            </tr>
+            <tr>
+                <td>2A</td><td>2B</td>
+            </tr>
+            <tr>
+                <td>3A</td><td>3B</td><td>3C</td>
+            </tr>
+        </table>
+    </section><hr>
+    <section class="semantic">
+        <h2>Semântica em tabelas</h2>
+        <p>Como as páginas as tabelas também podem ser feitas com significado semântico.<br>
+        <b>Table header &lt;th&gt;</b><br>
+        <code>
+            &lt;tr&gt;<br>
+                &lt;th&gt; conteúdo &lt;th&gt;<br>
+            &lt;/tr&gt;<br>    
+        </code><br><br>
+        Além disso temos a tag &lt;thead&gt; que tem a função de especificar a área referente ao cabeçalho.<br>
+        &lt;tbody&gt; tem a função de especificar o corpo da tabela.<br>
+        &lt;tfoot&gt; especifica o footer. (Segundo a spec o tfoot fica entre a thead e a tbody)<br>
+        </p>
 
-
+    </section>
     <p><a href="../aula11/index.html">&lt;&lt;Voltar</a> | <a href="../aula13/index.html">Avançar &gt;&gt;</a><br><br></p>
 </body>
 </html>
