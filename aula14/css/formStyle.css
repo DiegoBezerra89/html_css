@@ -1,0 +1,59 @@
+body{
+    background-color: rgb(147, 224, 255);
+    font-family: sans-serif;
+}
+
+#principal{
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    color: rgb(146, 146, 146);
+}
+
+textarea{
+    resize: none;
+    display: block;
+    padding: 5px;
+}
+
+input, select{
+    padding: 5px;
+    display: block;
+    margin: 5px 0 10px;
+}
+
+fieldset{
+    margin-bottom: 15px;
+    border: .5px solid rgb(199, 199, 199);
+}
+
+#nome, #email, .skillsField, .sobre, .contrato{
+    width: 60%;
+    box-sizing: border-box;
+}
+
+#masculino, #feminino{
+    display: inline;
+}
+
+#feminino{
+    margin-left: 20px;
+}
+
+.sexo , .skills{
+    width: 200px;
+}
+
+.skillsCheck{
+    display: inline; /*maneira que eu encontrei de deixar um resultado visual interessante*/
+}
+
+.skillsLabel{
+    margin: 20px;
+}
+
+.aceito{
+    display: inline;
+}
+

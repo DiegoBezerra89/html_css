@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Diego Bezerra">
+    <meta name="keywords" content="form example">
+    <meta name="description" content="HTML, form, style">
+    <link rel="stylesheet" href="css/formStyle.css">
+    <title>Aula 14 | Exemplo Formulário</title>
+</head>
+<body>
+    <div id="principal">
+    <header>
+        <h1>formulário</h1><hr>
+    </header>
+        <main>
+            <h3>Exemplo:</h3>
+            <form method="POST" action="#">
+                <fieldset class="dados">
+                    <legend>Dados Cadastrais</legend>
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" name="nome" id="nome" autofocus>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                    <label for="data">Data de nascimento</label>
+                    <input type="date" name="data" id="data" min="1900-01-31" max="2019-02-01">
+                    <fieldset class="sexo">
+                        <legend>Sexo</legend><!--para q o radio selecione apenas uma opção é necessário q os botoes tenham o mesmo name-->
+                        <label for="masculino"><input type="radio" name="sexo" value="M" id="masculino">Masculino</label> 
+                        <label for="feminino"><input type="radio" name="sexo" value="F" id="feminino">Feminino</label>
+                    </fieldset>
+                    <label for="estado">Estado</label>
+                    <select name="estado" id="estado">
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="MG">Minas Gerais</option>
+                    </select>
+                    <fieldset class="skillsField">
+                        <legend>Skills</legend>
+                        <label class="skillsLabel"><input type="checkbox" name="html" id="html" class="skillsCheck">HTML</label>
+                        <label class="skillsLabel"><input type="checkbox" name="css" id="css" class="skillsCheck">CSS</label>
+                        <label class="skillsLabel"><input type="checkbox" name="js" id="js" class="skillsCheck">Javascript</label>
+                        <label class="skillsLabel"><input type="checkbox" name="node" id="node" class="skillsCheck">Node.js</label>
+                        <label class="skillsLabel"><input type="checkbox" name="react" id="react" class="skillsCheck">React</label>
+                    </fieldset>
+                    <fieldset class="sobre">
+                        <legend>Sobre você</legend>
+                        <textarea placeholder="Faça um breve texto apresentando-se..." cols="60" rows="20" name="sobre"></textarea>
+                    </fieldset>
+                    <fieldset class="contrato">
+                        <legend>Contrato de trabalho</legend>
+                        <textarea name="contrato" cols="60" rows="20" readonly>Eu aceito trabalhar nesta empresa que conheço a tão pouco tempo e já considero pacas!</textarea>
+                        <label class="aceito"><input type="checkbox" value="aceito" class="aceito">    Li e aceito</label>
+                    </fieldset>
+                </fieldset>
+            </form>
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+</body>
+</html>
