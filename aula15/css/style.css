@@ -33,3 +33,12 @@
     padding: 10px;
     margin: 10px auto;
 }
+
+.box-shadow2{
+    width: 200px;
+    height: 200px;
+    background-color: magenta;
+    box-shadow: 10px 10px 5px #ccc ;/*primeiro valor: deslocamento eixo X, segundo: eixo Y, terceiro: esfumaçamento, quarto: cor da sombra;*/
+    padding: 10px;
+    margin: 10px auto;
+}
