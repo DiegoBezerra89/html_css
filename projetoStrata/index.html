@@ -8,6 +8,7 @@
     <meta name="description" content="Projeto Strata, página completa">
     <meta name="keywords" content="HTML, CSS, Javascript, projeto strata">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <title>Aula 16 | Projeto Strata</title>
 </head>
 <body>
@@ -116,11 +117,11 @@
         </section>
         <section class="mainContentSection">
             <h2>Preformatado</h2>
-            <div style="width:350px; height:150px; background-color:gainsboro; color:grey; font-family: consolas, sans-serif, monospace; padding: 20px; box-sizing: border-box; border-radius: 10px;">
-                    <code>&lt;script&gt;<br>
-                        alert('oi');<br>
-                    &lt;/script&gt;<br></code>
-            </div>
+            <pre>
+&lt;script&gt;
+    alert('oi');
+&lt;/script&gt;
+            </pre>
         </section>
         <section class="mainContentSection">
             <h2>Listas</h2>
@@ -136,53 +137,78 @@
                 <li>item 2</li>
                 <li>item 3</li>
             </ol>
+            <h3>Alternate</h3>
+            <ul class="ulAlternate">
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+            </ul>
+            <h3>Icons</h3><!--Icones retirados do site fontawesome.com-->
+            <ul>
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+                <li><i class="fab fa-github"></i></li>
+            </ul>
         </section>
         <section class="mainContentSection">
-            <table class="default">
+            <p>
+                <a href="#" class="buttonDefault">Default</a>
+                <a href="#" class="buttonDefault buttonDefaultStroke">Default</a>
+            </p>
+            <p>
+                <a href="#" class="buttonDefault buttonDefaultSmall">Default</a>
+                <a href="#" class="buttonDefault buttonDefaultSmall buttonDefaultStroke">Default</a>
+            </p>
+            <p>
+                <a href="#" class="buttonDefault buttonDefaultFull">Default</a>
+                <a href="#" class="buttonDefault buttonDefaultFull buttonDefaultStroke">Default</a>
+            </p>
+        </section>
+        <section class="mainContentSection">
+            <table class="table">
                 <legend>Default</legend>
                 <thead>
                     <tr>
-                        <td>Name</td>
-                        <td>Description</td>
-                        <td>Price</td>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Price</th>
                     </tr>
                 </thead>
                 <tfoot>
                     <tr>
-                        <td></td>
-                        <td></td>
-                        <td colspan="3">100.00</td>
+                        <td colspan="2"></td>
+                        <td>100.00</td>
                     </tr>
                 </tfoot>
                 <tbody>
-                    <tr class="tableOne">
+                    <tr>
                         <td>Item 1</td>
                         <td>Ante turpis integer aliquet porttitor.</td>
                         <td>29.99</td>
                     </tr>
-                    <tr class="tableTwo">
+                    <tr>
                         <td>Item 2</td>
                         <td>Vis ac commodo adipiscing arcu aliquet.</td>
                         <td>19.99</td>
                     </tr>
-                    <tr class="tableOne">
+                    <tr>
                         <td>Item 3</td>
                         <td>Morbi faucibus arcu accumsan lorem.</td>
                         <td>29.99</td>
                     </tr>
-                    <tr class="tableTwo">
+                    <tr>
                         <td>Item 4</td>
                         <td>Vitae integer tempus condimentum.</td>
                         <td>19.99</td>
                     </tr>   
-                    <tr class="tableOne">
+                    <tr>
                         <td>Item 5</td>
                         <td>Ante turpis integer aliquet porttitor.</td>
                         <td>29.99</td>
                     </tr> 
                 </tbody>
             </table>
-            <table class="default">
+            <table class="tableAlternate">
                     <legend>Alternate</legend>
                     <thead>
                         <tr>
@@ -193,33 +219,32 @@
                     </thead>
                     <tfoot>
                         <tr>
-                            <td></td>
-                            <td></td>
-                            <td colspan="3">100.00</td>
+                            <td colspan="2"></td>
+                            <td>100.00</td>
                         </tr>
                     </tfoot>
                     <tbody>
-                        <tr class="tableOne">
+                        <tr>
                             <td>Item 1</td>
                             <td>Ante turpis integer aliquet porttitor.</td>
                             <td>29.99</td>
                         </tr>
-                        <tr class="tableTwo">
+                        <tr>
                             <td>Item 2</td>
                             <td>Vis ac commodo adipiscing arcu aliquet.</td>
                             <td>19.99</td>
                         </tr>
-                        <tr class="tableOne">
+                        <tr>
                             <td>Item 3</td>
                             <td>Morbi faucibus arcu accumsan lorem.</td>
                             <td>29.99</td>
                         </tr>
-                        <tr class="tableTwo">
+                        <tr>
                             <td>Item 4</td>
                             <td>Vitae integer tempus condimentum.</td>
                             <td>19.99</td>
                         </tr>   
-                        <tr class="tableOne">
+                        <tr>
                             <td>Item 5</td>
                             <td>Ante turpis integer aliquet porttitor.</td>
                             <td>29.99</td>
