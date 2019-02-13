@@ -113,6 +113,10 @@ strong{
     overflow: auto;
 }
 
+.getInTouch{
+    width:60%;
+}
+
 /*BUTTONS*/
 
 .buttonDefault{
@@ -129,6 +133,42 @@ strong{
 }
 
 
+/*====================================================*/
+
+
+
+/*INPUTS -  COMECAREI A UTILIZAR SELETORES*/
+
+input{
+    display: block;
+    margin-bottom: 15px;
+}
+
+label{
+    color: rgb(200,200,200);
+}
+
+input[type=text]{
+    background-color: rgb(240,240,240);
+    width: 100%;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+input[type=email]{
+    background-color: rgb(240,240,240);
+    width: 60%;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+textarea{
+    display: block;
+    background-color: rgb(240,240,240);
+    width: 80%;
+    resize: none;
+    margin-bottom: 20px;
+}
 
 /*font-family: 'Roboto', sans-serif;
 font-family: 'Oswald', sans-serif;
