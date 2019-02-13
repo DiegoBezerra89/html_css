@@ -7,6 +7,14 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6{
+    color: rgb(148, 147, 147);
+}
+
+strong{
+     color: rgb(44, 44, 44);
+}
+
 .mainHeader{
     background-image: url(../images/bg.jpg);
     background-position: fixed, left;
@@ -23,12 +31,7 @@ body{
     padding-right: 5%;
     box-sizing: border-box;
     text-align: right;
-    padding-top: 50px;
-}
-
-.mainContentSection{
-    margin-left: 40%;
-    margin-right: 5%;
+    padding-top: 150px;
 }
 
 .mainHeaderImage{
@@ -41,16 +44,7 @@ body{
     font-weight: lighter;
 }
 
-.mainHeader a{
-    text-decoration: dotted;
-    color: rgba(73, 73, 73, 0.801);
-    transition: .5s;
-}
-
-.mainHeader a:hover{
-    color: rgb(2, 255, 170);
-}
-h1{
+.mainHeader h1{
     margin-top: 20px;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
@@ -58,9 +52,81 @@ h1{
     letter-spacing: 1px;
     line-height: 1.5;
 }
- strong{
-     color: rgb(44, 44, 44);
- }
+
+
+.mainHeader a{
+    text-decoration: dotted;
+    color: rgba(119, 119, 119, 0.801);
+    transition: .5s;
+}
+
+.mainHeader a:hover{
+    color: rgb(25, 207, 147);
+    font-weight: 100;
+}
+
+.mainContentSection1{
+    margin-left: 40%;
+    margin-right: 5%;
+    padding-top: 150px;
+}
+
+.mainContentSection1 p{
+    color: grey;
+    line-height: 1.5;
+}
+
+.mainContentSection{
+    margin-left: 40%;
+    margin-right: 5%;
+    padding-top: 50px;
+}
+
+.mainContentSection p{
+    color: grey;
+    line-height: 1.5;
+}
+
+.mainContentSection1 a{
+    color: rgb(148, 147, 147);
+    text-decoration: none;
+}
+
+.mainContentSection a{
+    color: rgb(148, 147, 147);
+    text-decoration: none;
+}
+
+.mainContentSectionCard{
+    width: 48%;
+    float: left;
+    margin: 20px 1%;
+}
+
+.mainContentSection img{
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.mainContentCards{
+    overflow: auto;
+}
+
+/*BUTTONS*/
+
+.buttonDefault{
+    border: rgb(148, 147, 147) 2px solid;
+    border-radius: 5px;
+    padding: 15px;
+    display: inline-block;
+    transition: .3s;
+}
+
+.buttonDefault:hover{
+    color: rgb(25, 207, 147);
+    border: rgb(25, 207, 147) 2px solid;
+}
 
 
 
