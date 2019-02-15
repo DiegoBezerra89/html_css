@@ -15,6 +15,8 @@ strong{
      color: rgb(44, 44, 44);
 }
 
+/* =================== Main ======================*/
+
 .mainHeader{
     background-image: url(../images/bg.jpg);
     background-position: fixed, left;
@@ -131,7 +133,7 @@ strong{
     box-sizing: border-box;
     margin-left: 0px;
     border-radius: 10px;
-    color: rgb(200,200,200);
+    color: rgb(155, 155, 155);
 }
 
 .listas{
@@ -154,7 +156,31 @@ strong{
     color: rgb(25, 207, 147);
 }
 
-/*BUTTONS*/
+/* =============== TABLES =================*/
+td, th{
+    border-bottom: .3px solid rgb(156, 156, 156);
+    padding: 10px 20px 10px 10px;
+}
+
+table{
+    border-collapse: collapse;
+    border-left: none;
+}
+
+.table thead{
+    background-color: rgb(158, 158, 158);
+    color: rgb(83, 83, 83);
+    font-weight: 200;
+    text-align: left;
+}
+
+tfoot td{
+    border-top: solid gray 2px;
+    border-bottom: none;
+}
+
+
+/*================ BUTTONS ================*/
 
 .buttonDefault{
     border: rgb(148, 147, 147) 2px solid;
@@ -162,6 +188,26 @@ strong{
     padding: 15px;
     display: inline-block;
     transition: .3s;
+    text-align: center;
+    font-size: 14px;
+}
+
+.buttonDefaultSmall{
+    width: 40px;
+    display: block;
+    padding: 10px;
+    margin: 3px;
+    font-size: 10px;
+}
+
+.buttonDefaultFull{
+    width: 180px;
+}
+
+.buttonDefaultFullSmall{
+    font-size: 10px;
+    width: 180px;
+    padding: 10px;
 }
 
 .buttonDefault:hover{
@@ -171,15 +217,24 @@ strong{
 
 .buttonDefaultFill{
     background-color: rgb(25, 207, 147);
-    color: white;
+    transition: .3s;
+    border:rgb(25, 207, 147) 2px solid;
+    border-radius: 5px;
+    display: inline-block;
+    transition: .5s;
 }
 
-
+.buttonDefaultFill:hover{
+    background-color: rgb(24, 255, 178);
+    color: rgb(19, 172, 121);
+    border: rgb(24, 255, 178) 2px solid;
+}
 /*====================================================*/
 
 
 
-/*INPUTS -  COMECAREI A UTILIZAR SELETORES*/
+/* ==================== INPUTS ======================*/
+/* COMECAREI A UTILIZAR SELETORES*/
 
 input{
     display: block;
@@ -187,7 +242,7 @@ input{
 }
 
 label{
-    color: rgb(200,200,200);
+    color: rgb(133, 133, 133);
     display: block;
 }
 
@@ -196,7 +251,7 @@ input[type=text]{
     width: 49%;
     padding: 8px;
     border-radius: 10px;
-    margin: 1%;
+    margin-top: 10px;
     display: inline-block;
 }
 
@@ -206,7 +261,7 @@ input[type=email]{
     padding: 8px;
     border-radius: 10px;
     display: inline-block;
-    margin: 1%;
+    margin-top: 10px;
 }
 
 textarea{
@@ -215,8 +270,10 @@ textarea{
     width: 80%;
     resize: none;
     margin-bottom: 20px;
+    border-radius: 10px;
 }
 
+/* ============= Fontes utilizadas =================*/
 /*font-family: 'Roboto', sans-serif;
 font-family: 'Oswald', sans-serif;
 font-family: 'Raleway', sans-serif;*/
