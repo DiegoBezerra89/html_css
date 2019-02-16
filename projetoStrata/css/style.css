@@ -157,28 +157,42 @@ strong{
 }
 
 /* =============== TABLES =================*/
-td, th{
-    border-bottom: .3px solid rgb(156, 156, 156);
-    padding: 10px 20px 10px 10px;
-}
-
 table{
     border-collapse: collapse;
-    border-left: none;
+    width: 100%;
+    margin-top: 15px;
 }
 
-.table thead{
-    background-color: rgb(158, 158, 158);
-    color: rgb(83, 83, 83);
-    font-weight: 200;
+tr, th, td{
+    padding: 10px;
     text-align: left;
 }
 
-tfoot td{
-    border-top: solid gray 2px;
+thead{
+    background-color: rgb(200,200,200);
+    color: rgb(145, 145, 145);
+}
+
+tfoot{
+    border-top: rgb(92, 92, 92) 2px solid;
     border-bottom: none;
 }
 
+.one{
+    background-color: rgb(226, 226, 226);
+}
+
+.tableAlternate tbody{
+    border: 1px rgb(200,200,200) solid;
+    border-top: 1px rgb(200,200,200) solid;
+    border-right: 1px rgb(200,200,200) solid;
+    border-left: 1px rgb(200,200,200) solid;
+}
+
+
+.tableAlternate td{
+    border: 1px rgb(200,200,200) solid;
+}
 
 /*================ BUTTONS ================*/
 
