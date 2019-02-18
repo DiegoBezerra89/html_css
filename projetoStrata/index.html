@@ -236,8 +236,8 @@
                     </thead>
                     <tfoot>
                         <tr>
-                            <td colspan="2"></td>
-                            <td>100.00</td>
+                            <td colspan="2" class="foot"></td>
+                            <td class="foot">100.00</td>
                         </tr>
                     </tfoot>
                     <tbody>
@@ -272,24 +272,22 @@
         <section class="mainContentSection">
             <h2>Buttons</h2>
             <div class="buttonsSide">
-                <input type="button" class="defaultFillBig" value="Default">
-                <input type="button" class="defaultStrokeBig" value="Default">
+                <input type="button" class="buttonDefault" value="Default">
+                <input type="button" class="buttonDefault buttonDefaultFill" value="Default">
             </div>
             <div class="buttonsSide">
-                <input type="button" class="defaultFillSmall" value="Default">
-                <input type="button" class="defaultStrokeSmall" value="Default">
+                <input type="button" class="buttonDefault buttonDefaultSmall" value="Default">
+                <input type="button" class="buttonDefault buttonDefaultFillSmall" value="Default">
             </div>
             <div class="buttonsUpon">
-                <input type="button" class="defaultFillBig" value="Default">
-                <input type="button" class="defaultStrokeBig" value="Default">
+                <input type="button" class="buttonDefault" value="Default">
+                <input type="button" class="buttonDefault buttonDefaultFill" value="Default">
             </div>
             <div class="buttonsUpon">
-                <input type="button" class="defaultFillSmall" value="Default">
-                <input type="button" class="defaultStrokeSmall" value="Default">
+                <input type="button" class="buttonDefault buttonDefaultSmall" value="Default">
+                <input type="button" class="buttonDefault buttonDefaultFillSmall" value="Default">
             </div>
-            <div class="buttonsSend">
-                <input type="submit" value="mandar">
-            </div>
+                <input type="submit" value="mandar" class="buttonDefault buttonDefaultFill">
         </section>
         <section class="mainContentSection">
             <label for="name2">Nome</label>
@@ -305,31 +303,32 @@
             </select>
         </section>
         <section class="mainContentSection">
-            <label for="baixaPrioridade"><input type="radio" value="baixa" id="baixaPrioridade" name="prioridade">Baixa Prioridade</label>
-            <label for="mediaPrioridade"><input type="radio" value="media" id="mediaPrioridade" name="prioridade">Média Prioridade</label>
-            <label for="altaPrioridade"><input type="radio" value="alta" id="altaPrioridade" name="prioridade">Alta Prioridade</label>
+            <label for="baixaPrioridade" class="prioridade"><input type="radio" value="baixa" id="baixaPrioridade" name="prioridade">Baixa Prioridade</label>
+            <label for="mediaPrioridade" class="prioridade"><input type="radio" value="media" id="mediaPrioridade" name="prioridade">Média Prioridade</label>
+            <label for="altaPrioridade" class="prioridade"><input type="radio" value="alta" id="altaPrioridade" name="prioridade">Alta Prioridade</label>
             <label for="envieCopia"><input type="checkbox" name="envieCopia" id="envieCopia">Envie-me uma cópia</label>
             <label for="souHumano"><input type="checkbox" name="souHumano" id="souHumano">Sou um humano</label>
         </section>
         <section class="mainContentSection">
             <h3>Mensagem</h3>
             <textarea cols="70" rows="10"></textarea>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar" class="buttonDefault buttonDefaultFill">
+            <input type="reset" value="Limpar" class="buttonDefault buttonDefaultStroke">
         </section>
         <section class="mainContentSection">
             <h2>Imagens</h2>
-            <img src="images/fulls/01.jpg" alt="Rua com bicicletário e carro branco estacionado">
-            <img src="images/thumbs/01.jpg" alt="Rua com bicicletário e carro branco estacionado">
-            <img src="images/thumbs/02.jpg" alt="Floresta de pinheiros e luz do sol entre as árvores">
-            <img src="images/thumbs/03.jpg" alt="Estante de livros em escada caracol">
-            <img src="images/thumbs/04.jpg" alt="pés subindo escadas de bota">
-            <img src="images/thumbs/05.jpg" alt="montanhas com neve">
-            <img src="images/thumbs/06.jpg" alt="colina com casa na árvore feita de madeira">
+            <img src="images/fulls/01.jpg" alt="Rua com bicicletário e carro branco estacionado" class="imageFull">
+            
+            <div class="imageThumb"><img src="images/thumbs/01.jpg" alt="Rua com bicicletário e carro branco estacionado"></div>
+            <div class="imageThumb"><img src="images/thumbs/02.jpg" alt="Floresta de pinheiros e luz do sol entre as árvores"></div>
+            <div class="imageThumb2"><img src="images/thumbs/03.jpg" alt="Estante de livros em escada caracol"></div>
+            <div class="imageThumb"><img src="images/thumbs/04.jpg" alt="pés subindo escadas de bota"></div>
+            <div class="imageThumb"><img src="images/thumbs/05.jpg" alt="montanhas com neve"></div>
+            <div class="imageThumb2"><img src="images/thumbs/06.jpg" alt="colina com casa na árvore feita de madeira"></div>
         </section>
         <section class="mainContentSection">
             <h2>Left & Right</h2>
-            <img src="images/avatar.jpg">
+            <img src="images/avatar.jpg" class="imageLeft">
             <p>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. 
                 tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. 
                 Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. 
@@ -342,7 +341,7 @@
                 felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. 
                 Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer 
                 ac pellentesque praesent.</p>
-                <img src="images/avatar.jpg">
+                <img src="images/avatar.jpg" class="imageRight">
             <p>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. 
                 tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. 
                 Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. 

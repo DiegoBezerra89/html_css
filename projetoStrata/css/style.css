@@ -136,6 +136,8 @@ strong{
     color: rgb(155, 155, 155);
 }
 
+
+
 .listas{
     width: 50%;
     float:left;
@@ -154,6 +156,10 @@ strong{
 .icons{
     font-size: 25px;
     color: rgb(25, 207, 147);
+}
+
+.prioridade label{
+    display: inline;
 }
 
 /* =============== TABLES =================*/
@@ -207,11 +213,13 @@ tfoot{
 }
 
 .buttonDefaultSmall{
-    width: 40px;
-    display: block;
+    border: rgb(148, 147, 147) 2px solid;
+    border-radius: 5px;
     padding: 10px;
-    margin: 3px;
-    font-size: 10px;
+    display: inline-block;
+    transition: .3s;
+    text-align: center;
+    font-size: 11px;
 }
 
 .buttonDefaultFull{
@@ -234,8 +242,24 @@ tfoot{
     transition: .3s;
     border:rgb(25, 207, 147) 2px solid;
     border-radius: 5px;
-    display: inline-block;
     transition: .5s;
+}
+
+.buttonDefaultFillSmall{
+        background-color: rgb(25, 207, 147);
+        transition: .3s;
+        border:rgb(25, 207, 147) 2px solid;
+        border-radius: 5px;
+        display: inline-block;
+        transition: .5s;
+        padding: 10px;
+        font-size: 11px;
+}
+
+.buttonDefaultFillSmall:hover{
+    color: rgb(19, 172, 121);
+    background-color: rgb(24, 255, 178);
+    border: rgb(24, 255, 178) 2px solid;
 }
 
 .buttonDefaultFill:hover{
@@ -243,6 +267,54 @@ tfoot{
     color: rgb(19, 172, 121);
     border: rgb(24, 255, 178) 2px solid;
 }
+
+.buttonsUpon input{
+    display: block;
+    margin-top: 5px;
+}
+
+.buttonsSide input{
+    display: inline;
+}
+
+/*============ images =============*/
+.imageFull{
+    margin: 10px 0;
+    display: block;
+}
+
+.imageThumb{
+    margin-top: 10px;
+    width: 32%;
+    margin-left: none;
+    margin-right: 2%;
+    height: 200px;
+    float: left;
+    display: inline-block;
+}
+
+.imageThumb2{
+    width: 32%;
+    margin-right: none;
+    height: 200px;
+    float: left;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.imageLeft{
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    float: left;
+}
+
+.imageRight{
+    float: right;
+    width: 40px;
+    height: 40px;
+}
+
 /*====================================================*/
 
 
@@ -287,6 +359,13 @@ textarea{
     border-radius: 10px;
 }
 
+input[type=radio]{
+    display: inline-block;
+}
+
+input[type=checkbox]{
+    display: inline-block;
+}
 /* ============= Fontes utilizadas =================*/
 /*font-family: 'Roboto', sans-serif;
 font-family: 'Oswald', sans-serif;
