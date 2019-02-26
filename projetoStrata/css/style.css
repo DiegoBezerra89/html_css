@@ -1,3 +1,12 @@
+/* ========= CORREÇÃO ==========
+    a Correção está feita neste código em comentários, o site está da maneira que eu codei.
+*/
+
+
+
+/* ========= Dica =========
+    Sempre é interessante a formatação das tags mais básicas do documento primeiro.
+*/
 *{
     margin-top: 0px;
     padding-top: 0px;
@@ -9,11 +18,53 @@ body{
 
 h1, h2, h3, h4, h5, h6{
     color: rgb(148, 147, 147);
+
+    /*unidade de medida "em", eh relativo a o mesmo tamanho do elemento em questao, se um elemento tem 10px
+    1em = 10px.
+    pode ser aplicado em padding, height, width, etc.
+    */
 }
 
 strong{
      color: rgb(44, 44, 44);
 }
+
+/* p {
+    margin: 0 0 2em; *a margem vai acompanhar o tamanho da letra, sendo duas vezes seu tamanho.
+    }
+
+
+ sub,sup{
+    font-size: 12px;
+}
+
+    blockquote{
+      border-left:     
+}
+
+    code{
+        background: #f7f7f7;
+        border-radius: .35em;
+        border: 2px solid #efefef;
+        font-size: .9em;
+        padding: 0.25em 0.65em;
+    }
+
+    pre code{
+        display: block;
+    }
+
+    ul, ol{
+        margin: 0;
+        padding: 0;
+        padding-left: 1em;
+    }
+
+    li{
+        padding-left: .5em;
+    }
+
+*/
 
 /* =================== Main ======================*/
 
@@ -46,7 +97,14 @@ strong{
     font-weight: lighter;
 }
 
-.mainHeader h1{
+
+.mainHeader h1{ /*Sempre é bom colocar uma classe BEM DEFINIDA! ======= ERRO =======*/
+    /* ===== BEM - Block Element modifier =======
+    main-header-h1
+    main (block)
+    header - Element
+    h1 - modifier
+    */    
     margin-top: 20px;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
@@ -56,14 +114,31 @@ strong{
 }
 
 
+/*  Mais fácil formatar todo a.
+    a{
+        transition: color 2s linear, border .2s linear;
+        text-decoration: none;
+        border-bottom: dotted 1px;
+        color: #49bf9d;
+    }
+    a:hover{
+        border-bottom-color: transparent;
+    }
+*/
+
 .mainHeader a{
+    /*====== BEM ======
+    main-header-link
+    ===== Herança de formatação ======
+    color: inherit; Herda as configurações de color do elemento pai, no caso do link um h1.
+    */
     text-decoration: dotted;
     color: rgba(119, 119, 119, 0.801);
     transition: .5s;
 }
 
 .mainHeader a:hover{
-    color: rgb(25, 207, 147);
+    color: #49bf9d;
     font-weight: 100;
 }
 
@@ -152,6 +227,22 @@ strong{
     color: rgb(175,175,175);
     width: 48%;/* erro na formatação*/
 }
+
+/*
+    .ul-alternate{
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    .ul-alternate li{
+        border-bottom: 2px solid #d8d8d8;
+        padding-left: 0;
+    }
+
+    .ul alternate li:lastchild{ **lastchild: o ultimo filho de li, a ultima linha
+        border: 0;
+    }
+*/
 
 .icons{
     font-size: 25px;
