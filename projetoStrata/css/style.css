@@ -254,6 +254,47 @@ strong{
 }
 
 /* =============== TABLES =================*/
+/* 
+    table{
+        width: 100%;
+        margin: 0 0 2em 0;
+        border-collapse: collapse;
+        text-align: left;
+    }
+
+    table td{
+        padding: .75em;
+    }
+
+    table th{
+        background: #ccc;
+        padding: .75em;
+    }
+
+    table tbody tr td{
+        border-bottom: 1px solid #ccc;
+    }
+
+    table tbody tr:first-child td{
+        border-top: 2px solid #666;
+    }
+
+    table tbody tr:last-child td{
+        border-bottom: 2px solid #666;
+    }
+
+    table tbody tr:nth-child(odd) td{
+        background: #eee;
+        //nth-child(odd): possibilita pegar um elemento n de uma arvore de herança, no caso "odd" elementos ímpares
+        //nth-child(even): elementos pares;
+    }
+
+    .table-alternate tbody td, .table-alternate tbody tr:firs-child td, .table-aternate tbody tr:last-child td{
+        border: 1px solid #ddd;
+    }
+*/
+
+
 table{
     border-collapse: collapse;
     width: 100%;
@@ -411,6 +452,12 @@ tfoot{
 /*====================================================*/
 
 
+
+
+
+/*========= FORMATACAO DE FORMULÁRIO =============*/
+
+    
 
 /* ==================== INPUTS ======================*/
 /* COMECAREI A UTILIZAR SELETORES*/
