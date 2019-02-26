@@ -18,7 +18,7 @@ strong{
 /* =================== Main ======================*/
 
 .mainHeader{
-    background-image: url(../images/bg.jpg);
+    background-image: url(../images/overlay.png),url(../images/bg.jpg); /*Sobrepoe uma imagem, como camadas*/
     background-position: fixed, left;
     background-repeat: no-repeat;
     background-size: cover;
@@ -41,7 +41,7 @@ strong{
 }
 
 .mainHeader p{
-    color: rgb(175, 175, 175);
+    color: rgb(136, 136, 136);
     letter-spacing: 1px;
     font-weight: lighter;
 }
@@ -50,7 +50,7 @@ strong{
     margin-top: 20px;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
-    color: rgba(73, 73, 73, 0.801);
+    color: rgba(199, 199, 199, 0.801);
     letter-spacing: 1px;
     line-height: 1.5;
 }
