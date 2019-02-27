@@ -288,6 +288,11 @@ strong{
         color: #49bf9d;
     }
 
+    .main-footer p{
+        color: rgba(255, 255, 255, 0.589);
+        font-size: 15px;
+    }
+
 
 /*
     ========== GRID ===========
