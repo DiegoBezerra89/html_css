@@ -15,7 +15,7 @@
 <body>
     <header class="mainHeader">
         <a href="index.html" class="mainHeaderLink">
-            <img src="./images/avatar.jpg" alt="Foto do desenvolvedor do site" class="mainHeaderImage">
+            <img src="./images/avatar.jpg" alt="Foto do desenvolvedor do site" class="mainHeaderImage image-link">
         </a> 
         <h1>Trabalhos e Groselhas de<br> 
             <strong>Diego Bezerra Martins</strong>,<br>
@@ -34,32 +34,32 @@
             <h3>Recent Works</h3>
             <div class="mainContentCards">
                 <article class="mainContentSectionCard">
-                    <a href="images/fulls/01.jpg" alt="rua com carro branco"><img src="images/thumbs/01.jpg"></a>
+                    <a href="images/fulls/01.jpg" alt="rua com carro branco" class="image-link"><img src="images/thumbs/01.jpg"></a>
                     <p><strong>Magna sed consequat tempus</strong></p>
                     <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
                 </article>
                 <article class="mainContentSectionCard">
-                    <a href="images/fulls/02.jpg" alt="floresta com pinheiros e luz do sol"><img src="images/thumbs/02.jpg"></a>
+                    <a href="images/fulls/02.jpg" alt="floresta com pinheiros e luz do sol" class="image-link"><img src="images/thumbs/02.jpg"></a>
                     <p><strong>Quam neque phasellus</strong></p>
                     <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
                 </article>
                 <article class="mainContentSectionCard">
-                    <a href="images/fulls/03.jpg" alt="estante de livros em uma biblioteca"><img src="images/thumbs/03.jpg"></a>
+                    <a href="images/fulls/03.jpg" alt="estante de livros em uma biblioteca" class="image-link"><img src="images/thumbs/03.jpg"></a>
                     <p><strong>Ultricies lacinia interdum</strong></p>
                     <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
                 </article>
                 <article class="mainContentSectionCard">
-                    <a href="images/fulls/04.jpg" alt="pés com botas subindo uma escada"><img src="images/thumbs/04.jpg"></a>
+                    <a href="images/fulls/04.jpg" alt="pés com botas subindo uma escada" class="image-link"><img src="images/thumbs/04.jpg"></a>
                     <p><strong>Nunc enim commodo aliquet</strong></p>
                     <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
                 </article>
                 <article class="mainContentSectionCard">
-                    <a href="images/fulls/05.jpg" alt="montanhas com neve"><img src="images/thumbs/05.jpg"></a>
+                    <a href="images/fulls/05.jpg" alt="montanhas com neve" class="image-link"><img src="images/thumbs/05.jpg"></a>
                     <p><strong>Tortor metus commodo</strong></p>
                     <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
                 </article>
                 <article class="mainContentSectionCard">
-                    <a href="images/fulls/06.jpg" alt="uma casa na árvore feita de madeira, com floresta ao fundo"><img src="images/thumbs/06.jpg"></a>
+                    <a href="images/fulls/06.jpg" alt="uma casa na árvore feita de madeira, com floresta ao fundo" class="image-link"><img src="images/thumbs/06.jpg"></a>
                     <p><strong>Risus ornare lacinia</strong></p>
                     <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
                 </article>
@@ -69,34 +69,42 @@
             <h3>Get in touch</h3>
             <p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. 
                Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
-            <div class="getInTouch">
-                <form method="POST" action="#">
-                    <label for="name">Nome</label>
-                    <input class="getIntouchName" type="text" id="name" name="name" placeholder="Nome Completo">
-
-                    <label for="email">Email</label>
-                    <input class="getInTouchName" type="email" id="email" name="email" placeholder="Email">
-                
-                    <label for="message">Mensagem</label>
-                    <textarea cols="40" rows="15" id="message" ></textarea>
-                
-                    <input type="submit" value="Enviar" class="buttonDefault">
-                </form>
-            </div>
-                <address>
-                    <p>
-                        <span>Endereço</span>
-                        1234 Somewhere Rd. Nashville, TN 00000 United States
-                    </p>
-                    <p>
-                        <span>Telefone</span>
-                        000-0000-0000
-                    </p>
-                    <p>
-                        <span>Email</span>
-                        diego@server.com
-                    </p>
-                </address>
+               <div class="row">
+                   <div class="col-2-3">
+                        <form method="POST" action="#">
+                            <div class="row">
+                                <div class="col-2">
+                                    <label for="name">Nome</label>
+                                    <input class="getIntouchName" type="text" id="name" name="name" placeholder="Nome Completo">
+                                </div>
+                                <div class="col-2">  
+                                    <label for="email">Email</label>
+                                    <input class="getInTouchName" type="email" id="email" name="email" placeholder="Email">
+                                </div>
+                            </div>    
+                            <label for="message">Mensagem</label>
+                            <textarea cols="40" rows="15" id="message" ></textarea>
+                        
+                            <input type="submit" value="Enviar" class="buttonDefault">
+                        </form>
+                   </div>
+                   <div class="col-1-3">
+                        <address>
+                            <p>
+                                <span>Endereço</span>
+                                1234 Somewhere Rd. Nashville, TN 00000 United States
+                            </p>
+                            <p>
+                                <span>Telefone</span>
+                                000-0000-0000
+                            </p>
+                            <p>
+                                <span>Email</span>
+                                diego@server.com
+                            </p>
+                        </address>
+                   </div>
+               </div> 
         </section>
         <section class="mainContentSection">
             <h3>Elements</h3>
@@ -130,37 +138,41 @@
         </section>
         <section class="mainContentSection">
             <h2>Listas</h2>
-            <div class="listas">
-                <h3>Não ordenadas</h3>
-                    <ul>
-                        <li>item 1</li>
-                        <li>item 2</li>
-                        <li>item 3</li>
-                    </ul>
-            </div>
-            <div class="listas">
-                <h3>Ordenadas</h3>
-                    <ol>
-                        <li>item 1</li>
-                        <li>item 2</li>
-                        <li>item 3</li>
-                    </ol>
-            </div>
-            <div class="listas listasAlternate">
-                <h3>Alternate</h3>
-                    <ul>
-                        <li>item 1</li>
-                        <li>item 2</li>
-                        <li>item 3</li>
-                    </ul>
-            </div>
-            <div class="listas">
-                <h3>Icons</h3><!--Icones retirados do site fontawesome.com-->
-                    <ul>
-                        <li><i class="fab fa-twitter icons"></i></li>
-                        <li><i class="fab fa-instagram icons"></i></li>
-                        <li><i class="fab fa-github icons"></i></li>
-                    </ul>
+            <div class="row">
+                <div class="col-2">
+                        <h3>Não ordenadas</h3>
+                            <ul>
+                                <li>item 1</li>
+                                <li>item 2</li>
+                                <li>item 3</li>
+                            </ul>
+                    </div>
+                    <div class="col-2">
+                        <h3>Ordenadas</h3>
+                            <ol>
+                                <li>item 1</li>
+                                <li>item 2</li>
+                                <li>item 3</li>
+                            </ol>
+                    </div>
+                </div>
+                <div class="row">    
+                    <div class="col-2">
+                        <h3>Alternate</h3>
+                            <ul class="ul-alternate">
+                                <li>item 1</li>
+                                <li>item 2</li>
+                                <li>item 3</li>
+                            </ul>
+                    </div>
+                    <div class="col-2">
+                        <h3>Icons</h3><!--Icones retirados do site fontawesome.com-->
+                            <ul class="ul-icons">
+                                <li><i class="fab fa-twitter icons"></i></li>
+                                <li><i class="fab fa-instagram icons"></i></li>
+                                <li><i class="fab fa-github icons"></i></li>
+                            </ul>
+                    </div>
             </div>
         </section>
         <section class="mainContentSection">
