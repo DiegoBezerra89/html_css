@@ -106,10 +106,11 @@ strong{
     header - Element
     h1 - modifier
     */    
+    font-weight: normal;
     margin-top: 20px;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
-    color: rgba(199, 199, 199, 0.801);
+    color: rgba(255, 255, 255, 0.801);
     letter-spacing: 1px;
     line-height: 1.5;
 }
@@ -262,6 +263,29 @@ strong{
         display: inline-block;
         color: #49bf9d;
         font-size: 2em;
+    }
+
+
+    .main-footer{
+        position: fixed;
+        bottom: 100px;
+        width: 35%;
+        left: 0;
+        text-align: right;
+        padding: 0 72px 72px 0;
+        box-sizing: border-box;
+    }
+
+    .main-footer a{
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.801);
+        cursor: pointer;
+        transition: .3s;
+        
+    }
+
+    .main-footer a:hover{
+        color: #49bf9d;
     }
 
 
@@ -424,6 +448,7 @@ tfoot{
     text-align: center;
     font-size: 14px;
     width: auto;
+    cursor: pointer;
 }
 
 .buttonDefaultSmall{
