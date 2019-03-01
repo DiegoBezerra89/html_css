@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Diego Bezerra">
+    <meta name="keywords" content="Seletores CSS">
+    <meta name="description" content="Descrição dos seletores CSS">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Aula17 | Seletores CSS</title>
+</head>
+<body>
+    <h1>Seletores Compostos CSS</h1><hr>
+    <h2>DOM - Document Object Model</h2>
+    <p>
+        Estrutura baseada em heranças de tags:
+    </p>
+    <pre>
+        <code>
+    &lt;article&gt;
+        &lt;h3&gt; &lt;/h3&gt;
+        &lt;p&gt;
+            &lt;a&gt; &lt;p&gt; &lt;/p&gt; &lt;/a&gt;
+        &lt;/p&gt;
+        &lt;p&gt; 
+            &lt;a&gt; &lt;p&gt; &lt;/p&gt; &lt;/a&gt;            
+        &lt;/p&gt;    
+        &lt;p&gt; 
+            &lt;a&gt; &lt;p&gt; &lt;/p&gt; &lt;/a&gt;            
+        &lt;/p&gt;      
+    &lt;/article&gt;
+        </code>
+    </pre>
+    <p>No código acima:<br>
+        Article possui filhos,
+        <ul>
+            <li>article</li>
+            <ul><li>h3 é filho de article</li></ul>
+        </ul>
+        <ul>
+            <li>article</li>
+            <ul><li>p é filho de article</li>
+                <ul><li>a é filho de p</li>
+                    <ul><li>b é filho de a</li></ul>
+                </ul>
+            </ul>
+        </ul>
+        <ul>
+            <li>article</li>
+                <ul><li>p é filho de article</li>
+                    <ul><li>a é filho de p</li>
+                    <ul><li>b é filho de a</li></ul>
+                </ul>
+            </ul>
+        </ul>
+        <ul>
+            <li>article</li>
+                <ul><li>p é filho de article</li>
+                    <ul><li>a é filho de p</li>
+                    <ul><li>b é filho de a</li></ul>
+                </ul>
+                </ul>
+            </ul>
+    </p><hr>
+    <h3>Descendência</h3>
+    <p>
+        <code>
+            <pre>
+            article a {
+                background: red;
+            }
+            </pre>
+        </code>
+    </p>
+</body>
+</html>
