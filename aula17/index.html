@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,8 +12,10 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <title>Aula17 | Seletores CSS</title>
 </head>
+
 <body>
-    <h1>Seletores Compostos CSS</h1><hr>
+    <h1>Seletores Compostos CSS</h1>
+    <hr>
     <h2>DOM - Document Object Model</h2>
     <p>
         Estrutura baseada em heranças de tags:
@@ -33,46 +36,188 @@
     &lt;/article&gt;
         </code>
     </pre>
+    <img src="images/DOM4.png" alt="Arvore DOM">
     <p>No código acima:<br>
         Article possui filhos,
         <ul>
             <li>article</li>
-            <ul><li>h3 é filho de article</li></ul>
+            <ul>
+                <li>h3 é filho de article</li>
+            </ul>
         </ul>
         <ul>
             <li>article</li>
-            <ul><li>p é filho de article</li>
-                <ul><li>a é filho de p</li>
-                    <ul><li>b é filho de a</li></ul>
+            <ul>
+                <li>p é filho de article</li>
+                <ul>
+                    <li>a é filho de p</li>
+                    <ul>
+                        <li>b é filho de a</li>
+                    </ul>
                 </ul>
             </ul>
         </ul>
         <ul>
             <li>article</li>
-                <ul><li>p é filho de article</li>
-                    <ul><li>a é filho de p</li>
-                    <ul><li>b é filho de a</li></ul>
+            <ul>
+                <li>p é filho de article</li>
+                <ul>
+                    <li>a é filho de p</li>
+                    <ul>
+                        <li>b é filho de a</li>
+                    </ul>
                 </ul>
             </ul>
         </ul>
         <ul>
             <li>article</li>
-                <ul><li>p é filho de article</li>
-                    <ul><li>a é filho de p</li>
-                    <ul><li>b é filho de a</li></ul>
-                </ul>
+            <ul>
+                <li>p é filho de article</li>
+                <ul>
+                    <li>a é filho de p</li>
+                    <ul>
+                        <li>b é filho de a</li>
+                    </ul>
                 </ul>
             </ul>
-    </p><hr>
-    <h3>Descendência</h3>
-    <p>
+        </ul>
+    </p>
+    <hr>
+    <h3>Descendência (espaço)</h3>
+    <code>
+        <pre>
+        article a {
+            background: red;
+        } /*No código acima, o espaço entre o atributo siginifica herança, todo "a" que for herdeiro de "article" receberá a formatação em questão.*/
+        </pre>
+    </code>
+    <img src="images/DOM2.png" alt="Arvore DOM">
+    <code>
+        <pre>
+        article p b{
+            background: red;
+        } /*Seleciona todo "b" que é descendente de "p" que é descendente de "article"*/
+        </pre>
+    </code>
+    <img src="images/DOM3.png" alt="Arvore DOM">
+    <h3>Filho direto (&gt;)</h3>
+    <p>O sinal de maior &gt; Significa filho direto:</p>
+    <code>
+        <pre>
+        article p > b{
+            background: red;
+        } /*Seleciona todo "b" que é filho direto de "p", no caso do nosso código, nenhum elemento é selecionado. */
+        </pre>
+    </code>
+    <img src="images/DOM4.png" alt="Arvore DOM">
+    <code>
+        <pre>
+        article p > a{
+            background: red;
+        } /*Seleciona todo "a" que é filho direto de "p"*/
+        </pre>
+    </code>
+    <img src="images/DOM5.png" alt="Arvore DOM">
+    <h3>Irmão adjacente (+)</h3>
+    <p>O sinal de + é utilizado para determinar que o próximo elemento imediatamente após o descrito será formatado:</p>
+    <code>
+        <pre>
+        article h3 + p{
+            background: red;
+        } /*Seleciona todo "p" imediatamente após o "h3", todo "p" que é irmão direto de "h3"*/
+        </pre>
+    </code>
+    <img src="images/DOM6.png" alt="Arvore DOM">
+    <code>
+        <pre>
+        article p + p{
+            background: red;
+        } /*Seleciona todo "p" imediatamente após um "p", todo "p" que é irmão direto de "p"*/
+        </pre>
+    </code>
+    <img src="images/DOM7.png" alt="Arvore DOM">
+    <h3>Próximos irmãos (~)</h3>
+    <p>O sinal tiu(~) seleciona todos os próximos irmãos, todos que vem após o elemento em questão, antes não!</p>
+    <code>
+        <pre>
+        article h3 ~ p{
+            background: red;
+        } /*Seleciona todo "p" que é irmão de "h3"*/
+        </pre>
+    </code>
+    <img src="images/DOM8.png" alt="Arvore DOM">
+    <hr>
+    <!--Gostei dessa maneira de colocar imagens para explicar o código, utilizarei daqui pra frente-->
+    <h2>Seletores de atributos</h2>
+    <p><b>[Atributo]</b>
         <code>
             <pre>
-            article a {
-                background: red;
-            }
+            a[title]{
+                color: red;
+            } /*Seleciona todo "a" que possui o atributo title*/
             </pre>
         </code>
+        <img src="images/SelAtributos.png" alt="seletor de atributos">
     </p>
+    <p><b>[Atributo=""]</b>
+        <code>
+            <pre>
+            img[alt=" "]{
+                background-color: red;
+            } /*Seleciona todo "img" que possui o atributo alt com o valor=" "*/
+            </pre>
+        </code>
+        <img src="images/SelAtributos2.png" alt="seletor de atributos">
+    </p>
+    <p><b>[Atributo^="valor"]</b>
+        <code>
+            <pre>
+            a[href="http"]{
+                color: red;
+            } /*Seleciona todo atributo que inicia com o valor descrito, todo href que inicia com http*/
+            </pre>
+        </code>
+        <img src="images/SelAtributos3.png" alt="seletor de atributos">
+        <p><b>[Atributo$="valor"]</b>
+            <code>
+            <pre>
+                img[src$=".png"]{
+                border-color: red;
+            } /*Seleciona todo atributo que termina com o valor descrito, todo src que termina com .png*/
+            </pre>
+        </code>
+            <img src="images/SelAtributos4.png" alt="seletor de atributos">
+            <p>
+                <b>:not()</b>
+                <code>
+            <pre>
+                :not(a){
+                    ...;
+                }
+            } /*Seleciona todo atributo que NÃO seja um link*/
+            </pre>
+        </code>
+        <code>
+            <pre>
+                P:not(.destaque){
+                    ...;
+                }
+            } /*Seleciona todo parágrafo que NÃO possua a classe .destaque*/
+            </pre>
+        </code>
+        <code>
+            <pre>
+                img:not([alt]){
+                    display: none;
+                }
+            } /*Seleciona todo imagem que NÃO possua o atributo alt e a esconde, o que força o dev a colocar o atributo! ^^*/
+            </pre>
+        </code>
+        </p>
+        <p>
+            Existem outros tipos, porém são menos comuns.
+        </p>
+        <p><a href="../projetoStrata/index.html">&lt;&lt;Voltar</a> | <a href="../aula18/index.html">Avançar&gt;&gt;</a><br><br></p>
 </body>
+
 </html>
