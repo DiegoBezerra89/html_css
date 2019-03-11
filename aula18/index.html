@@ -8,12 +8,61 @@
     <meta name="description" content="Adicionando conteúdo com CSS, pseudo-elementos, content">
     <meta name="keywords" content="pseudo-elementos, CSS, seletores, pseudo-classes">
     <title>Aula 18 | Pseudo-classes e pseudo-elementos</title>
+    <style>
+        input[type="checkbox"]{
+            width: 100px;
+            height: 100px;
+        }
+        input[type="checkbox"]:checked{ /*Se estiver checado ele modifica a formatação, é um gatilho de estado*/
+            width: 50px;
+            height: 50px;
+        }
+        button:disabled{
+            background: blue;
+        }
+        p{
+            color: red;
+        }
+        p:empty::before{
+            content: "Parágrafo vazio aqui!";
+        }
+
+        input:focus{
+            background: greenyellow; /*ao clicar em qualquer input type text, a formatação será essa*/
+        }
+
+        a:focus, a:hover{ /*Sempre que o cursor (tab) estiver encima ele vai formatar | é interessante deixar o hover com a mesma formatação do focus*/
+            background: red;
+        }
+    </style>
 </head>
 <body>
     <h1>:Pseudo-classes e ::pseudo-elementos</h1>
-    <h2></h2>
-    
+    <h3>https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-classes</h3><hr>
+    <h2>:Pseudo-classes</h2>
+    <p>As Pseudo-classes são utilizadas para formatar elementos com base num estado dos mesmos. São inumeros exemplos.
+    </p>
+    <img src="images/pseudo-classes.png" alt="pseudo-classes"><hr>
+    <h2>::pseudo-elementos</h2>
+    <h3>https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-elementos</h3>
+    <p>Formata elementos pre-estabelecidos</p>
+    <img src="images/pseudo-elementos.png" alt="pseudo-elementos"><hr>
+    <h2>Exemplos</h2>
+    <label><input type="checkbox" value="Sim">Aceito o contrato!</label><br>
+    <button>Vai</button>
+    <button disabled>volta</button>
+    <p>Parágrafo 1</p>
+    <p> </p><!--Este parágrafo contém um epaço, logo não está vazio e não entra na formatação do pseudo-elemento-->
+    <p></p>
+    <hr>
 
+    <input type="text"><hr>
+    <ul>
+        <li><a href="#">Link Falso</a></li>
+        <li><a href="#">Link Falso</a></li>
+        <li><a href="#">Link Falso</a></li>
+        <li><a href="#">Link Falso</a></li>
+    </ul>
     <p><a href="../aula17/index.html">&lt;&lt;Voltar</a> | <a href="../aula19/index.html">Avançar&gt;&gt;</a><br><br></p>
 </body>
 </html>
