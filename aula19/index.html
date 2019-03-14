@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Diego Bezerra">
+    <meta name="description" content="Adicionando conteúdo com CSS, pseudo-elementos, content">
+    <meta name="keywords" content="pseudo-elementos, CSS, seletores, pseudo-classes">
+    <title>Aula 18 | Pseudo-classes e pseudo-elementos</title>
+    <style>
+        div p:nth-child(1){/*pega o primeiro filho que seja um parágrafo da div*/
+            color: red;/*Pega o primeiro filho da div e coloca a cor vermelha*/
+        }
+        div p:nth-child(2){
+            color: blue;/*Pega o segundo filho da div e coloca a cor azul*/
+        }
+        div p:nth-child(3){
+            color: green;/*Pega o terceiro filho da div e coloca a cor green, PORÉM, o terceiro filho eh um hr e não um parágrafo, logo não acontece nada*/
+        }
+        div p:nth-child(4){
+            color: yellowgreen;/*Pega o quarto filho da div e coloca a cor yellowgreen*/
+        }
+        div p:nth-of-type(3){/*Pega o terceiro elemento do tipo paragrafo*/
+            color: pink;
+        }
+    </style>
+<!--DAR UMA OLHADA NA DOCUMENTAÇÃO, POIS É UM ASSUNTO BASTANTE EXTENSO!!!-->
+</head>
+<body> 
+    <h1>::Pseudo-elementos | CHILDS</h1>
+    <p>Esse pseudo elemento é importante para dar formatação por meio de herança</p>
+    <em>Checar o código pois tem diversos comentários</em>
+    <div>
+        <p>Meu parágrafo</p>
+        <p>Meu parágrafo</p>    
+    <hr>
+        <p>Meu parágrafo</p>
+        <p>Meu parágrafo</p>    
+    <hr>
+        <p>Meu parágrafo</p>
+        <p>Meu parágrafo</p>   
+    <hr>
+        <p>Meu parágrafo</p>
+        <p>Meu parágrafo</p>    
+    </div><hr>
+    
+    <p><a href="../aula18/index.html">&lt;&lt;Voltar</a> | <a href="../aula20/index.html">Avançar&gt;&gt;</a><br><br></p>
+</body>
+</html>
