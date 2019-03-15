@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Diego Bezerra Martins">
+    <meta name="keywords" content="Seletores, propriedade transform">
+    <meta name="description" content="Funçoes da propriedade transform">
+    <link rel="stylesheet" href="style.css">
+    <title>Aula 20 | Transform</title>
+</head>
+<body>
+    <h1>Transform</h1><hr>
+    <p>Esta propriedade possibilita a modificações de algumas características do elemento, como sua posição no documento,
+        rotacionar o elemento, modificar a escala do tamanho do elemento, e diversas outras funções.
+    </p>
+    <div class="div1">div1</div>
+    <div class="div2">div2</div>
+    <pre>
+    <code>
+    .div1{
+        width: 150px;
+        height: 150px;
+        background: red;
+        transform: translate(50px, 50px);/*Desta maneira o elemento será deslocado, 50px no eixo x e 50px no eixo y*/
+    }
+    </code>
+    </pre>
+    <p>Porém, com esta propriedade desta maneira, o elemento não leva em consideração o tamanho do documento,
+        ele se desloca a quantidade especificada não levando em consideração os outros elementos, por vezes ocupa os lugares dos mesmos.
+    </p>
+    <p><b>E qual a diferença entre position e translate?</b><br>
+        A principal diferença é em como o elemento se comporta quando é especificado %<br>
+    </p>
+    <div class="div3">div2</div><br><br><br>
+    <pre>
+    <code>
+    .div3{
+        width: 150px;
+        height: 150px;
+        background: red;
+        transform: translate(50%, 50%);
+    }
+    </code>
+    </pre>
+    <p>Na div acima ele se deslocou 50% de seu tamanho, no eixo x, assim como no eixo y.<br>
+        Se fosse <em>position:relative</em>, o elemento se basearia no tamanho do elemento pai e não de si mesmo.
+    </p><hr>
+    <h3>translate</h3>
+    <div class="div4">
+        <div class="div4-interna">Conteúdo qualquer</div>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+    <hr>
+    <h3>rotate</h3>
+    <div class="div5">
+            <div class="div5-interna">Conteúdo qualquer</div>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+    <pre>
+        <code>
+        .div5{
+            border: solid 2px black;
+            overflow: hidden;
+        }
+                
+        .div5-interna{
+            background: yellow;
+            transform: rotate(45deg); /*deg é referente a graus*/
+        }    
+        </code>
+    </pre>
+    <p>Neste caso, o rotate age sobre o centro do elemento, gira em torno do seu próprio eixo.</p><hr>
+    <h3>transform-origin</h3>
+    <div class="div6">
+            <div class="div6-interna">Conteúdo qualquer</div>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+    <pre>
+        <code>
+        .div6{
+            border: solid 2px black;
+            overflow: hidden;
+        }
+                
+        .div6-interna{
+            background: yellow;
+            transform-origin: left top;/*modifica o eixo de transformação*/
+            transform: rotate(10deg);
+        }    
+        </code>
+    </pre>
+    <p>Neste caso, o rotate age sobre o eixo de transform-origin.</p>
+
+    <p><a href="../aula19/index.html">&lt;&lt;Voltar</a> | <a href="../aula21/index.html">Avançar&gt;&gt;</a><br><br></p>
+</body>
+</html>

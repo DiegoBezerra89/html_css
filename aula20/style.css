@@ -1,0 +1,50 @@
+.div1{
+    width: 150px;
+    height: 150px;
+    background: red;
+    transform: translate(50px, 50px);/*Desta maneira o elemento será deslocado, 50px no eixo x e 50px no eixo y*/
+}
+
+.div2{
+    width: 150px;
+    height: 150px;
+    background: blue;
+}
+
+.div3{
+    width: 150px;
+    height: 150px;
+    background: red;
+    transform: translate(50%, 50%);/*Desta maneira o elemento será deslocado, 50% do seu tamanho no eixo x e 50% do seu tamanho no eixo y*/
+}
+
+.div4{
+    border: solid 2px black;
+    overflow: hidden;
+}
+
+.div4-interna{
+    background: yellow;
+    transform: translate(20%, 25px);/*Note que o elemento se desloca na div pai*/
+}
+
+.div5{
+    border: solid 2px black;
+    overflow: hidden;
+}
+
+.div5-interna{
+    background: yellow;
+    transform: rotate(45deg);
+}
+
+.div6{
+    border: solid 2px black;
+    overflow: hidden;
+}
+        
+.div6-interna{
+    background: yellow;
+    transform-origin: left top;
+    transform: rotate(10deg);
+}    
