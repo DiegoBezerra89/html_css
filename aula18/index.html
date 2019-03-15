@@ -20,11 +20,9 @@
         button:disabled{
             background: blue;
         }
-        p{
-            color: red;
-        }
         p:empty::before{
             content: "Parágrafo vazio aqui!";
+            color: red;
         }
 
         input:focus{
@@ -45,7 +43,7 @@
     <img src="images/pseudo-classes.png" alt="pseudo-classes"><hr>
     <h2>::pseudo-elementos</h2>
     <h3>https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-elementos</h3>
-    <p>Formata elementos pre-estabelecidos</p>
+    <p>Formata elementos pre-estabelecidos, ou partes específicas destes.</p>
     <img src="images/pseudo-elementos.png" alt="pseudo-elementos"><hr>
     <h2>Exemplos</h2>
     <label><input type="checkbox" value="Sim">Aceito o contrato!</label><br>
@@ -62,7 +60,8 @@
         <li><a href="#">Link Falso</a></li>
         <li><a href="#">Link Falso</a></li>
         <li><a href="#">Link Falso</a></li>
-    </ul>
+    </ul><hr>
+    
     <p><a href="../aula17/index.html">&lt;&lt;Voltar</a> | <a href="../aula19/index.html">Avançar&gt;&gt;</a><br><br></p>
 </body>
 </html>
