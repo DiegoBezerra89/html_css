@@ -91,8 +91,54 @@
         }    
         </code>
     </pre>
-    <p>Neste caso, o rotate age sobre o eixo de transform-origin.</p>
-
+    <p>Neste caso, o rotate age sobre o eixo de transform-origin.</p><hr>
+    <h3>transform: rotate & translate</h3>
+    <div class="div7">
+            <div class="div7-interna">Conteúdo qualquer</div>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+    <pre>
+        <code>
+        .div7{
+            border: solid 2px black;
+            overflow: hidden;
+        }
+                
+        .div7-interna{
+            background: yellow;
+            transform-origin: left top;/*modifica o eixo de transformação*/
+            transform: rotate(10deg) translate(20px); /*Somente colocar um espaço entre os atributos*/
+        }    
+        </code>
+    </pre>
+    <p>Neste caso, o rotate age sobre o eixo de transform-origin e se desloca 20% no eixo x, e depois se desloca para o lado<br>
+        <b>Sendo que: o elemento rotacionou e depois transladou, o que fez com que o eixo x ficasse num angulo de 10deg</b>
+    </p><hr>
+    <h3>transform: translate & rotate</h3>
+    <div class="div8">
+            <div class="div8-interna">Conteúdo qualquer</div>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+    <pre>
+        <code>
+        .div8{
+            border: solid 2px black;
+            overflow: hidden;
+        }
+                
+        .div8-interna{
+            background: yellow;
+            transform-origin: left top;/*modifica o eixo de transformação*/
+            transform: translate(20px) rotate(10deg); /*Somente colocar um espaço entre os atributos*/
+        }    
+        </code>
+    </pre>
+    <p>Neste caso, o elemento se desloca 20 px a esquerda do eixo x, e depois rotaciona 10deg<br>
+        <b>Sendo que: o elemento transladou e depois rotacionou</b>
+    </p><hr>
+    <h2>Skew</h2>
+    <p>Este atributo se refere a deformação do elemento, esticar ou diminuir, como se fosse um transform do Photoshop</p>
+    <div>Div9</div>
     <p><a href="../aula19/index.html">&lt;&lt;Voltar</a> | <a href="../aula21/index.html">Avançar&gt;&gt;</a><br><br></p>
 </body>
 </html>

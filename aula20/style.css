@@ -48,3 +48,30 @@
     transform-origin: left top;
     transform: rotate(10deg);
 }    
+
+.div7{
+    border: solid 2px black;
+    overflow: hidden;
+}
+        
+.div7-interna{
+    background: yellow;
+    transform: rotate(10deg) translate(20%);
+}    
+
+.div8{
+    border: solid 2px black;
+    overflow: hidden;
+}
+        
+.div8-interna{
+    background: yellow;
+    transform-origin: left top;/*modifica o eixo de transformação*/
+    transform: translate(20px) rotate(10deg); /*Somente colocar um espaço entre os atributos*/
+}    
+
+.div9{
+    width: 150px;
+    height: 150px;
+    background: orange;
+}
