@@ -1,3 +1,7 @@
+div{
+    margin-top: 60px;
+}
+
 .div1{
     width: 150px;
     height: 150px;
@@ -74,4 +78,52 @@
     width: 150px;
     height: 150px;
     background: orange;
+    transform: skew(10deg);
+}
+
+.div10{
+    width: 150px;
+    height: 150px;
+    background: orange;
+    transform: skewy(10deg);
+}
+
+.div11{
+    width: 150px;
+    height: 150px;
+    background: orange;
+    transform: skew(10deg, 30deg);
+}
+
+.div12{
+    width: 150px;
+    height: 150px;
+    background:yellowgreen;
+    transform: scale(1.5); /*Aplica nos dois eixos igualmente*/
+}
+
+.div13{
+    width: 150px;
+    height: 150px;
+    background: yellowgreen;
+    transform: scaleX(1.5);
+}
+
+.div14{
+    width: 150px;
+    height: 150px;
+    background: yellowgreen;
+    transform: scaleY(1.5);
+}
+
+.div15{
+    width: 150px;
+    height: 150px;
+    background: yellowgreen;
+    transform: scaleY(1);
+    transition: .5s;
+}
+
+.div15:hover{
+    transform: scale(2);
 }

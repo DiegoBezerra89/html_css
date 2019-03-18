@@ -137,8 +137,103 @@
         <b>Sendo que: o elemento transladou e depois rotacionou</b>
     </p><hr>
     <h2>Skew</h2>
-    <p>Este atributo se refere a deformação do elemento, esticar ou diminuir, como se fosse um transform do Photoshop</p>
-    <div>Div9</div>
+    <p>Este atributo modifica os eixos X e Y, como um free transform com perspectiva.</p>
+    <div class="div9">Div9
+        <code>
+                        <pre>
+                            .div9{
+                                width: 150px;
+                                height: 150px;
+                                background: orange;
+                                transform: skew(10deg);
+                            }
+                        </pre>
+        </code>
+    </div>
+    <div class="div10">Div10
+        <code>
+                        <pre>
+                            .div10{
+                                width: 150px;
+                                height: 150px;
+                                background: orange;
+                                transform: skewy(10deg);
+                            }
+                        </pre>
+        </code>
+    </div>
+    <div class="div11">Div11
+        <code>
+            <pre>
+                .div11{
+                    width: 150px;
+                    height: 150px;
+                    background: orange;
+                    transform: skew(10deg, 30deg);
+                }
+            </pre>
+</code>
+    </div><hr>
+    <h3>Scale</h3>
+    <p>Esta propriedade trabalha como um transform do photshop, estica e diminui o elemento, a medida é feita por escala.</p>
+    <br><br>
+    <div class="div12">
+        Div 12
+        <code>
+            <pre>
+                .div12{
+                    width: 150px;
+                    height: 150px;
+                    background: yellowgreen;
+                    transform: scale(1.5);<!--este elemento tem 1.5 seu tamanho original-->
+                }
+            </pre>
+</code>
+    </div>
+    <div class="div13">
+        Div 13
+        <code>
+            <pre>
+                .div13{
+                    width: 150px;
+                    height: 150px;
+                    background: yellowgreen;
+                    transform: scaleX(1.5);<!--este elemento tem 1.5 seu tamanho original no eixo x-->
+                }
+            </pre>
+</code>
+    </div>
+    <div class="div14">
+        Div 14
+        <code>
+            <pre>
+                .div14{
+                    width: 150px;
+                    height: 150px;
+                    background: yellowgreen;
+                    transform: scaleY(1.5);<!--este elemento tem 1.5 seu tamanho original no eixo y-->
+                }
+            </pre>
+        </code>
+    </div>
+    <div class="div15">
+        Div 15
+        <code>
+            <pre>
+                .div15{
+                    width: 150px;
+                    height: 150px;
+                    background: yellowgreen;
+                    transform: scaleY(1);
+                    transition: .5s;
+                }
+
+                .div15:hover{
+                    transform: scale(2);
+                }
+            </pre>
+        </code>
+    </div><br><br><br>
     <p><a href="../aula19/index.html">&lt;&lt;Voltar</a> | <a href="../aula21/index.html">Avançar&gt;&gt;</a><br><br></p>
 </body>
 </html>
