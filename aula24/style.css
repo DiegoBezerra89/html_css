@@ -1,0 +1,37 @@
+body{
+    font-family: sans-serif;
+    background: yellow;
+    transition: .3s;
+}
+
+.container div{
+    background: #ccc;
+    margin-bottom: 15px;
+    height: 200px;
+    display: block;
+}
+
+.container{
+    background: white;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+
+@media screen and (min-width: 900px){ /*Ao chegar com o minimo de 900px o background muda de cor*/
+    body{
+        background: orange;
+    }
+
+    .container div{
+        width: 48%;
+        float: left;
+        margin: 1%;
+    }
+}
+
+.clear-fix::after{ /*Esta técnica substitui o overflow:auto */
+    content: " ";
+    display: block;
+    clear: both;
+}
