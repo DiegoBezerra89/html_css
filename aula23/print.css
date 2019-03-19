@@ -1,0 +1,18 @@
+body{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1{
+    color: black;
+}
+
+img{
+    display: none;
+}
+
+a:after{
+    content: "  ("attr(href)")";
+    display: inline-block;
+    margin-left: 20px;
+}

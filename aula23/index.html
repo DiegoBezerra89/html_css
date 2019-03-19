@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Diego Bezerra">
+    <meta name="keywords" content="responsividade, media queries">
+    <meta name="description" content="media queries, responsive pages, definitions and examples">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="print.css" media="print">
+    <title>Aula 23 | Responsividade</title>
+</head>
+<body>
+    <h1>Responsividade</h1><hr>
+    <p>Torna-se necessária uma adaptação aos diversos tamanhos de tela presentes hoje em dia.<br>
+        Este modelo de desenvolvimento parte da premissa que o código tem que estar preparado para qualquer tamanho de tela.
+    </p>
+    <p>Ao desenvolvermos até aqui, sempre pensávamos de maneira <em>desktop first</em>, que consiste em desenvolver para desktop e depois formatarmos para mobile e outras telas,
+        porém nota-se que o modelo de desenvolvimento mais simples seria o <em>mobile first</em>, pois o código se comporta melhor nos mobiles por ser um elemento acima do outro,
+        ao transferirmos o site para o desktop o mesmo sofre mudanças maiores, como a formatação das grids e etc.
+    </p>
+    <img src="images/mobile_first.png" alt="mobile first model" width="500px" height="400px;"><hr>
+    <h2>Media Queries</h2>
+    <p>São predefinições de estados do browser, é possível determinar a formatação da página de acordo com alguma condição estabelecida pelo dev.<br></p>
+    <pre>
+        <code>
+            @media only screen and (max-width: 600px) {
+                body {
+                  background-color: lightblue;
+                }
+              }
+        </code>
+    </pre>
+    <p>Se o browser ficar com 600px ou menos, a background-color será lightblue. <em>Faça o teste!</em></p><hr>
+    <h3>Media Print</h3>
+    <p>Esta predefinição de formatação será utilizada quando o comando "print" for executado.</p>
+    <pre>
+        <code>
+            &lt;link rel="stylesheet" href="print.css" media="print"&gt; /*Adicionar esta predefinição na head.*/
+
+
+            <em>Adicionar esta stylesheet css</em>
+            /*somente ao acionar a impressão*/
+
+
+            body{
+                color: black;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            
+            h1{
+                color: black;
+            }
+            
+            img{
+                display: none;
+            } /*Evita a impressão de imagens*/
+
+            a:after{
+                content: "  ("attr(href)")";
+                display: inline-block;
+                margin-left: 20px;
+            } /*Faz com que os links apareçam como urls*/ 
+            
+            /*ctrl+p e veja a formatação*/
+        </code>
+    </pre>
+    <a href="https:\\google.com">Link</a>
+    <p><a href="../aula22/index.html">&lt;&lt;Voltar</a> | <a href="../aula24/index.html">Avançar&gt;&gt;</a><br><br></p>
+</body>
+</html>
