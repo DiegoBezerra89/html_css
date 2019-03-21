@@ -1,0 +1,144 @@
+@charset "utf-8";
+
+body{
+    font-family: sans-serif;
+}
+
+h1,h2,h3,h4,h5{
+    font-family:"Oxygen", arial;
+}
+
+article{
+    margin: 4em auto;;
+}
+
+div{
+    margin: 0;
+}
+/* =============== TOP-HEADER =================*/
+.top-header{
+    text-align: center;
+}
+
+.top-header-logo{
+    margin: .5em;
+}
+
+.top-nav{
+    background-color: #612674;
+    text-align: center;
+    list-style: none;
+}
+
+.top-nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+.top-nav li{
+    color: white;
+    list-style: none;  
+}
+
+.top-nav a{
+    text-decoration: none;
+    padding: 1em;
+    display: block;
+    color: white;
+    transition: .3s;
+}
+
+.top-nav a:hover{
+    background-color: #7c3792;
+}
+
+/* ============= MAIN-CONTENT ============== */
+
+.main-content{
+    text-align: center;
+    margin-left:2em;
+}
+
+.intro h1{
+    font-size: 1.3em;
+    color: #612674;
+}
+
+.intro p{
+    color: #ab71be;
+    margin: 2em auto;
+}
+
+.fundamentals h2{
+    font-size: 1.3em;
+    color: #7c3792;
+    text-transform: uppercase;
+}
+
+.design h2{
+    font-weight: 50;
+    color: #7c3792;
+}
+
+.design{
+    text-align: left;
+}
+/*============ FOOTER =============*/
+
+.contact{
+    background-color: #3e4e6a;
+    padding: 1em;
+    text-align: center;
+    margin: 0;
+    display:block;
+}
+
+.contact ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.contact li{
+    display: inline-block;
+    margin-left: 1em;
+}
+
+.contact a{
+    color: white;
+    transition: .3s;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.contact a:hover{
+    color: #63cfdd;
+}
+
+.copyright {
+    background: #252f3f;
+    margin: 0;
+    display: block;
+    color: #bcd4df;
+    text-align: center;
+    padding: 2em;
+}
+
+/*========= Buttons ==========*/
+
+.default-button{
+    width: 7em;
+    font-size: 1em;
+    padding: 1em 2em;
+    background-color: #63cfdd;
+    border-radius: .3em;
+    color: white;
+    text-decoration: none;
+    transition: .3s;
+    margin-top: .5em;
+    display: inline-block;
+}
+
+.default-button:hover{
+    background-color: #3a9daa;
+}
