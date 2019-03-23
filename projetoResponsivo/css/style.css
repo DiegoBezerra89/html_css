@@ -15,6 +15,8 @@ article{
 div{
     margin: 0;
 }
+
+
 /* =============== TOP-HEADER =================*/
 .top-header{
     text-align: center;
@@ -137,8 +139,66 @@ div{
     transition: .3s;
     margin-top: .5em;
     display: inline-block;
+    text-align: center;
 }
 
 .default-button:hover{
     background-color: #3a9daa;
 }
+
+
+/*======== MEDIA QUERIES ==========*/
+
+/* ==== 400px =====*/
+@media screen and (min-width: 780px){
+    .top-header{
+        text-align: left;
+    }
+    
+    .top-nav{
+        background-color: white;
+        list-style:none;
+        color: #7c3792;
+    }
+
+    .top-nav-780::after{
+        content: " ";
+        clear: both;
+        display: block;
+    }
+
+    .top-nav-780 li{
+        display: inline-block;
+        color: #7c3792;
+        list-style: none;
+        float: right;
+    }
+
+    .top-nav a{
+        text-decoration: none;
+        padding: 1em;
+        display: block;
+        color: #7c3792;
+        transition: .3s;
+    }
+    
+    .top-nav a:hover{
+        background-color: #7c3792;
+        color: white;
+    }
+
+    .intro {
+        background: #612674;
+        color: white;
+        padding: 2em;
+        margin: 0;
+        display: block;
+        box-sizing: border-box;
+    }
+
+    .intro h1:before{
+        content: url(../images/icon_play.png);
+        margin: 0;
+        display: inline-block;
+    }
+ } 
