@@ -8,7 +8,11 @@ h1,h2,h3,h4,h5,h6{
     font-family: "Oxygen", sans-serif;
 }
 
-
+.clearfix{
+    content: ' ';
+    display: block;
+    clear: both;
+}
 
 /* ============= BUTTON ============ */
 
@@ -20,7 +24,7 @@ h1,h2,h3,h4,h5,h6{
     color: white;
     text-decoration: none;
     transition: .3s;
-    margin: 1em;
+    margin: 1em 0;
 }
 
 .button:hover{
@@ -99,4 +103,93 @@ h1,h2,h3,h4,h5,h6{
 .middle-content p{
     color: #2c2c2c;
     line-height: 1.5;
+}
+
+/*========== BOTTOM CONTENT ==========*/
+
+.bottom{
+    background-color: #f6f6f6;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+.bottom p{
+    color: #2c2c2c;
+    line-height: 1.5;
+}
+
+.bottom-title{
+    font-weight: normal;
+    color: #7c3792;
+}
+
+/*===========FOOTER============*/
+
+.main-footer{
+    padding: 0 0 1em 0;
+    background: #25303e;
+    color: #83969f;
+    text-align: center;
+}
+
+.main-footer ul{
+    padding: .5em;
+    text-align: center;
+    background-color: #303d4c;
+}
+
+.main-footer li{
+    display: inline-block;
+    margin: .3em;
+}
+
+.main-footer [class^="icon"]{
+    font-size: 1.5em;
+    
+}
+
+.main-footer a{
+    text-decoration: none;
+    color: #f6f6f6;
+    transition: .3s;
+}
+
+.main-footer a:hover{
+    color: #59c4c4;
+}
+
+/*==========MEDIA QUERIES===========*/
+
+@media screen and (min-width: 48.75em){
+    .main-content{
+        background-color: #612674;
+    }
+    .main-content-title, .main-content-subtitle{
+        color: white;
+    }
+    .top-header-logo{
+        float: left;
+        padding: .3em;
+        margin: 0;
+    }
+    .top-nav{
+        float: right;
+        background: transparent;
+    }
+    .top-nav ul{
+        margin: 0;
+        padding: 0;
+    }
+    .top-nav li{
+        margin-top: 1em;
+        display: inline-block;
+    }
+    .top-nav a{
+        color: #a87bb7;
+        background: white;
+        transition: .3s;
+    }
+    .top-nav a:hover{
+        background: #f0c1ff;
+    }
 }
