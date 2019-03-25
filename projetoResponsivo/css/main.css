@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+html{
+    font-family: sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Oxygen", sans-serif;
+}
+
+
+
+/* ============= BUTTON ============ */
+
+.button{
+    display: inline-block;
+    padding: .75em 2.5em;
+    background-color: #59c4c4;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    transition: .3s;
+    margin: 1em;
+}
+
+.button:hover{
+    background: #37a0a0;
+}
+
+
+/* ============= TOP HEADER ===============*/
+.top-header-logo{
+    margin: 1em 0;
+    padding: 0;
+}
+
+.top-header{
+    text-align: center;
+}
+
+.top-nav{
+    background-color: #612674;
+    text-align: center;
+    display: block;
+}
+
+.top-nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.top-nav a{
+    color: white;
+    text-decoration: none;
+    transition: .3s;
+    display: block;
+    padding: 1em;
+}
+
+.top-nav a:hover{
+    background: #7c3792;
+}
+
+.main-content{
+    background: #f6f6f6;
+    padding: 1em;
+    text-align: center;
+} 
+
+.main-content-title{
+    color: #612674;
+    font-size: 1.375em;/*22px/16*/
+    margin: 1.375em;
+}
+
+.main-content-subtitle{
+    color: #a87bb7;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* ================ MIDDLE CONTENT ===============*/
+
+.middle-content{
+    text-align: center;
+    padding: 1em;
+    background: #f6f6f6;
+}
+
+.middle-content [class^=icon]{
+    color: #612674;
+}
+
+.middle-content-title{
+    color: #612674;
+}
+
+.middle-content p{
+    color: #2c2c2c;
+    line-height: 1.5;
+}
