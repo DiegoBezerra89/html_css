@@ -70,6 +70,7 @@ h1,h2,h3,h4,h5,h6{
     background: #f6f6f6;
     padding: 1em;
     text-align: center;
+    margin: 0;
 } 
 
 .main-content-title{
@@ -90,6 +91,7 @@ h1,h2,h3,h4,h5,h6{
     text-align: center;
     padding: 1em;
     background: #f6f6f6;
+    margin: 0;
 }
 
 .middle-content [class^=icon]{
@@ -126,7 +128,7 @@ h1,h2,h3,h4,h5,h6{
 /*===========FOOTER============*/
 
 .main-footer{
-    padding: 0 0 1em 0;
+    padding: .0 0 1em 0;
     background: #25303e;
     color: #83969f;
     text-align: center;
@@ -136,6 +138,7 @@ h1,h2,h3,h4,h5,h6{
     padding: .5em;
     text-align: center;
     background-color: #303d4c;
+    display:block;
 }
 
 .main-footer li{
@@ -191,5 +194,16 @@ h1,h2,h3,h4,h5,h6{
     }
     .top-nav a:hover{
         background: #f0c1ff;
+    }
+
+
+    .col-1_4{
+        width: 44%;
+        margin: 3%;
+        float: left;
+    }
+
+    .button780{
+        float: right;
     }
 }
