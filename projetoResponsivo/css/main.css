@@ -214,7 +214,8 @@ h1,h2,h3,h4,h5,h6{
     .main-content{
         background-image: url(../images/bg_topo_1600x1374.jpg);
         padding: 20em 20em 10em;
-        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     .col-1_4{
         width:23%;
