@@ -1,0 +1,23 @@
+html{
+    font-family: sans-serif;
+}
+
+pre{
+    background-color: #e7e7e7;
+}
+
+video{
+    box-shadow: 2px 2px 3px black;
+    border-radius: 4px; 
+}
+
+iframe{
+    width: 45em;
+    height: 30em;
+}
+
+.videoExterno{
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px grey;
+}

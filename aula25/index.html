@@ -9,8 +9,58 @@
     <title>Audio, iframes, vídeo</title>
 </head>
 <body>
-    
-
+    <h1>Inserindo Mídia</h1><hr>
+    <h2>Áudio</h2>
+    <pre>
+    <code>
+    &lt;audio src="media/mozart_trompa.mp3" controls&gt; /*é necessária a diretiva controls, para mostrar os controles de áudio. 
+    </code>
+    </pre>
+    <audio src="media/mozart_trompa.mp3" controls></audio>
+    <p>Obs: a formatação do controle de áudio muda conforme o browser<br><br>
+        - os Browsers também podem ter peculiaridades quanto ao reconhecimento de extensões de arquivos de áudio, por isso se faz necessário o uso da tag <em>source</em>
+    </p>
+    <pre>
+        <code>
+        &lt;audio controls autoplay&gt; /*é necessária a diretiva controls, para mostrar os controles de áudio.*/    /*autoplay, assim que a página é carregada o som é reproduzido (alguns browsers não tocam)*/
+        &lt;source src="media/mozart_trompa.mp3" type="audio/mp3"&gt;&lt;/source&gt;
+        &lt;source src="media/mozart_trompa.ogg" type="audio/ogg"&gt;&lt;/source&gt;/*type indica ao browser qual é o tipo do arquivo a ser reproduzido*/
+        &lt;p&gt;Seu Browser não suporta este arquivo&lt;/p&gt;/*sáo vai aparecer quando o browser não conseguir executar o arquivo*/
+        </code>
+    </pre><hr>
+    <h2>Vídeo</h2>  
+    <p>Os atributos de vídeo são idênticos aos de som</p>
+    <video controls>
+        <source src="media/video.mp4" type="video/mp4">
+        <source src="media/video.ogv" type="video/ogv">
+        <source src="media/video.webm" type="video/webm">
+        <p>Este conteúdo não é suportado pelo seu browser</p>
+    </video><hr>
+    <h2>iFrame</h2>
+    <p>Os iframes são janelas externas ao site<br>
+        São formatáveis por CSS.
+    </p>
+    <pre>
+        <code>
+            &lt;iframe src="../aula01/index.html"&gt;
+        </code>
+    </pre>
+    <p>OBS: alguns sites não permitem que você incorpore o conteúdo em seu site, por medida de segurança.<br>
+    Iframes possuem alguns atributos(checar documentação).</p>
+    <iframe src="../aula01/index.html"></iframe><hr>
+    <h3>incorporando conteúdos externos</h3>
+    <p>O Youtube possui a função de incorporar o conteúdo:</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/cEczlv669Oo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="videoExterno"></iframe>
+    <p>Também é formatado via CSS, no caso acima:</p>
+    <pre>
+        <code>
+        .videoExterno{
+            width: 500px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 3px grey;
+        }
+        </code>
+    </pre>
     <p><a href="../projetoResponsivo/index.html">&lt;&lt;Voltar</a> | <a href=" ../aula26/index.html">Avançar&gt;&gt;</a><br><br></p>
     <ul class="menu-principal">
         <li><a href="../aula01/index.html">01 - Parágrafos e tags básicas</a></li>
