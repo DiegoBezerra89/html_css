@@ -1,0 +1,104 @@
+#grupo-cores{
+    padding: 15px;
+    counter-reset: contador;
+}
+
+#grupo-cores div{
+    width: 400px;
+    height:150px;
+    border: 10px solid rgba(0,0,0,.5);
+    margin: 20px auto;
+    padding: 15px;
+    counter-increment: contador;
+}
+#grupo-cores div:before{
+    content: "(" counter(contador) ")";
+}
+
+#grupo-cores div:nth-child(2){
+    background-color: blueviolet; /*background em tudo até na borda(se estiver sozinho)*/
+    background-clip: content-box; /*background no conteúdo da caixa*/
+    /*background-clip: padding-box; background na caixa exceto na borda*/
+}
+#grupo-cores div:nth-child(3){
+    background-color: rgb(50%, 50%,0%, .5);/*rgb é um padrão com dificuldade em espacificação das cores, pois é simples.*/
+}
+#grupo-cores div:nth-child(4){
+    background-color: hsl(0deg, 50%, 0%);/*hsl é um padrão com grande especificação das cores, torna mais fino o ajuste e a escolha*/
+    /*
+    - o primeiro seletor refere-se a posição no círculo cromático, em graus de 1 a 360
+    - o segundo refere-se a saturação da cor escolhida
+    - o terceiro a luminosidade da cor, onde 0% é preto e 100% é branco
+    */
+}
+#grupo-cores div:nth-child(5){
+    background-color: hsl(350deg, 100%, 50%);
+}
+#grupo-cores div:nth-child(6){
+    background-image: linear-gradient(blue, red);
+    background-clip: padding-box;
+}
+#grupo-cores div:nth-child(7){
+    background-image: linear-gradient( to bottom left, blue, red);/*modifica a posição de destino do gradient*/
+    background-clip: padding-box;
+}
+#grupo-cores div:nth-child(8){
+    background-image: linear-gradient( 45deg, blue, red);/*modifica a posição em graus do gradient*/
+    background-clip: padding-box;
+}
+#grupo-cores div:nth-child(9){
+    background-image: linear-gradient( blue, transparent);
+    background-clip: padding-box;
+}
+#grupo-cores div:nth-child(10){
+    background-image: linear-gradient(68deg, blue, transparent), linear-gradient(to top, red, transparent);/*mesclando gradients*/
+    background-clip: padding-box;
+}
+
+
+/*=======Radiais=======*/
+#grupo-cores div:nth-child(11){
+    background-image: radial-gradient( blue, red);/*elipse é default*/
+    background-clip: padding-box;
+}
+#grupo-cores div:nth-child(12){
+    background-image: radial-gradient(circle, blue, red);/*espcificando circle, ele fica circular*/
+    background-clip: padding-box;
+}
+#grupo-cores div:nth-child(13){
+    background-image: radial-gradient(circle, blue, red, orange);/*Diversas cores*/
+    background-clip: padding-box;
+}
+#grupo-cores div:nth-child(14){
+    background-image: radial-gradient(circle, blue 20%, red, orange ); /*do 20% até o 100% ele vai passar as outras cores*/
+    background-clip: padding-box;
+}
+/*Posição dos gradientes*/
+#grupo-cores div:nth-child(15){
+    background-image: radial-gradient(closest-side at 20%/*no eixo vertical*/ 90%/*no eixo horizontal*/, blue, red, orange );/*vai de encontro ao LADO do container que está mais PRÓXIMO da origem do gradiente*/
+    background-clip: padding-box;
+}
+#grupo-cores div:nth-child(16){
+    background-image: radial-gradient(farthest-side at 20%/*no eixo vertical*/ 90%/*no eixo horizontal*/, blue, red, orange );/*vai de encontro ao LADO do container que está mais DISTANTE da origem do gradiente*/ 
+    background-clip: padding-box;
+}
+#grupo-cores div:nth-child(17){
+    background-image: radial-gradient(closest-corner at 20%/*no eixo vertical*/ 90%/*no eixo horizontal*/, blue, red, orange ); /*vai de encontro ao CANTO do container que está mais PRÓXIMO da origem do gradiente*/
+    background-clip: padding-box;
+}
+#grupo-cores div:nth-child(18){
+    background-image: radial-gradient(farthest-corner at 20%/*no eixo vertical*/ 90%/*no eixo horizontal*/, blue, red, orange );/*vai de encontro ao CANTO do container que está mais DISTANTE da origem do gradiente*/ 
+    background-clip: padding-box;
+}
+#grupo-cores div:nth-child(19){
+    background-image: repeating-linear-gradient(blue 30%, red, orange );/*ele vai até os 30% e começa a repetir o gradiente*/
+    background-clip: padding-box;
+}
+#grupo-cores div:nth-child(20){
+    background-image: repeating-radial-gradient(blue 0%, red 10%, orange 33.33% );/*ele vai até os 30% e começa a repetir o gradiente*/
+    background-clip: padding-box;
+}
+#grupo-cores div:nth-child(21){
+    background-image: linear-gradient(blue , red , orange );/*gradient está fixado no tamanho da página, como são tres cores, 33,33% para cada uma, tipo uma janela*/
+    background-attachment: fixed;
+}

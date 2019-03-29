@@ -67,6 +67,10 @@ h1,h2,h3,h4,h5,h6{
     padding: 1em;
     text-align: center;
     margin: 0;
+    background-image: radial-gradient(closest-corner at 50% 15%, grey, transparent);
+    background-position: center -80px;
+    background-repeat: no-repeat;
+    background-size: cover;
 } 
 .main-content-title{
     color: #612674;
@@ -149,6 +153,7 @@ h1,h2,h3,h4,h5,h6{
     .main-content{
         background-color: #612674;
         padding: 1em;
+        background-image: none;
     }
     .main-content-title, .main-content-subtitle{
         color: white;
@@ -192,6 +197,11 @@ h1,h2,h3,h4,h5,h6{
     .icon-play img{
         max-width: 100%;
         max-height: 100%;
+    }
+    .middle-content{
+        background-image: radial-gradient(farthest-side at 50% 15%, grey, transparent);
+        background-position: center -1em;
+        background-repeat: no-repeat;
     }
 }
 
