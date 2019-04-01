@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--importante para uma formatação segura e correta-->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Flexbox</title>
+    <style>
+        .flexbox{
+            margin-bottom: 1em;
+            height: 250px;
+            border: 1px solid red;
+            display: flex;
+        }
+        
+        .flexbox div{
+            background: orange;
+            width: 300px;
+            margin: 15px;
+        }   
+        .flexbox:nth-child(8){
+            height: 250px;
+            border: 1px solid red;
+            display: flex;
+            flex-direction: row; /*column, Modifica-se o eixo principal e o eixo Cross*/
+            flex-wrap: wrap;/*quando o tamanho exceder o especificado, o container quebra a linha e os elementos são disposto um abaixo do outro*/ /*nowrap, não quebra*/
+            /*flex-row: row wrap; | atalho para as propriedades acima, primeiro a flex-direction e depois flex-wrap*/
+        }
+        .flexbox:nth-child(9){
+            flex-direction: row;
+            justify-content: center;/*alinha os elementos ao centro verticalmente por default*/
+            /*justify-content: space-around; Pega os elementos e distribui o espaço que sobra entre todas as margens*/
+            /*justify-content: space-between; Pega os elementos do meio e distribui nas margens entre eles o espaço restante*/
+        }
+        .flexbox:nth-child(9) div{
+            width: 30px;
+        }
+        .flexbox:nth-child(10){
+            align-items: center;/*alinha os itens dentro do flex container*/
+            /*align-items: flex-end; alinha embaixo.*/
+            /*align-items: flex-start; alinha em cima*/
+            /*align-items: stretch; estica os elementos do tamanho do flex container*/
+            /*align-items: baseline; alinha os itens pela linha do texto utilizado nos flex itens, os tamanhos de fontes tem que ser diferentes*/
+        }
+        .flexbox:nth-child(11){
+            justify-content: center;
+            flex-wrap: wrap;
+            align-content: flex-start;/*funciona para movimentar grupos de flex itens, só se forem duas linhas (wrap)*/
+        }
+        .flexbox:nth-child(11) div{
+            width: 200px;
+        }
+
+        /*================PROPRIEDADES QUE SÃO APLICADAS NOS FLEX ITENS======================*/
+        .flexbox:nth-child(12){
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .flexbox:nth-child(12) div{
+            flex-basis: 200px;/*refere-se neste contexto de Row, à largura do elemento*/
+            height: 50px;
+        }
+
+        .flexbox:nth-child(13){
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .flexbox:nth-child(13) div{
+            flex-basis: 200px;/*refere-se neste contexto de Row, à largura do elemento*/
+            height: 50px;
+        }
+        .flexbox:nth-child(13) div:nth-child(2){
+            flex-grow: 2;/*o segundo flex item pega o espaço que sobra*/
+        }
+        .flexbox:nth-child(13) div:nth-child(4){
+            flex-grow: 1;/*o segundo flex item pega o espaço que sobra, ele divide igualmente para todos*/
+        }
+
+        .flexbox:nth-child(14) div{
+            flex-basis: 200px;/*refere-se neste contexto de Row, à largura do elemento*/
+            height: 50px;
+        }
+        .flexbox:nth-child(14) div:nth-child(2){
+            flex-shrink: 2;/*o segundo flex item PERDE o espaço que sobra*/
+        }
+        .flexbox:nth-child(14) div:nth-child(4){
+            flex-shrink: 1;/*o segundo flex item PERDE o espaço que sobra, ele divide igualmente para todos*/
+        }
+        /*a propriedade flex: é um atalho para as tês outras propriedades
+            flex: grow shrink basis;
+        */
+    </style>
+</head>
+<body>
+    <h1>Flexbox</h1><hr>
+    <p>Paradigma atual de formatação de layout das páginas web, funciona como um float, porém mais moderno e bem mais simples.<br>
+        A grande mudança está relacionada a criar um conteiner com divs dentro, onde o container receberá a classe <em>flexbox</em>, com uma formatação definida,
+        o próprio conteiner definirá a disposição dos itens inseridos nele.
+    </p>
+  
+    <h2>Display Flex</h2>
+    <p>Acomodar ou distribuir elementos de modo fácil</p>
+    <p>Ajuda a centralizar na vertical</p>
+
+    <div class="flexbox">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+    </div>
+
+    <div class="flexbox">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+    </div>
+
+    <div class="flexbox">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+    </div>
+    
+    <div class="flexbox">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+    </div>
+
+    <div class="flexbox">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+    </div>
+
+    <div class="flexbox">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+    </div>
+
+    <div class="flexbox">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+    </div>
+
+    <div class="flexbox">
+            <div class="div1">1</div>
+            <div class="div2">2</div>
+            <div class="div3">3</div>
+            <div class="div4">4</div>
+    </div>
+    <p><a href="../aula27/index.html">&lt;&lt;Voltar</a> | <a href=" ../aula29/index.html">Avançar&gt;&gt;</a><br><br></p>
+    <ul class="menu-principal">
+        <li><a href="../aula01/index.html">01 - Parágrafos e tags básicas</a></li>
+        <li><a href="../aula02/index.html">02 - Currículo básico</li>
+        <li><a href="../aula03/index.html">03 - Estrutura da página</li>
+        <li><a href="../aula04/index.html">04 - CSS | o que é?</li>
+        <li><a href="../aula05/index.html">05 - Box Model</li>
+        <li><a href="../aula06/index.html">06 - Currículo Formatado</a></li>
+        <li><a href="../aula07/index.html">07 - Imagens</li>
+        <li><a href="../aula08/index.html">08 - Semântica e Float</li>
+        <li><a href="../aula09/index.html">09 - Exercício - Site básico</li>
+        <li><a href="../aula10/index.html">10 - Position, relative e absolute</li>
+        <li><a href="../aula11/index.html">11 - Exercício - Site Fashion</li>
+        <li><a href="../aula12/index.html">12 - Listas aninhadas e overflow</li>
+        <li><a href="../aula13/index.html">13 - Tabelas</li>
+        <li><a href="../aula14/index.html">14 - Formulários</li>
+        <li><a href="../aula15/index.html">15 - Border-radius e box-shadow</li>
+        <li><a href="../aula17/index.html">17 - Seletores compostos</li>
+        <li><a href="../aula18/index.html">18 - Pseudo-classes e pseudo-elementos</li>
+        <li><a href="../aula19/index.html">19 - Childs</li>
+        <li><a href="../aula20/index.html">20 - Transform</li>
+        <li><a href="../aula21/index.html">21 - Exercício | checkbox</li>
+        <li><a href="../aula22/index.html">22 - Thumbnails formatados</li>
+        <li><a href="../aula23/index.html">23 - Responsividade</li>
+    </ul>
+</body>
+</html>
