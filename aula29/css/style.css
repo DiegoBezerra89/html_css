@@ -34,6 +34,32 @@
     background-color: greenyellow;
 }
 
+
+/*====== Nossa Grid =========*/
+#nossaGrid{
+        width: 90%;
+        max-width: 900px;
+        margin: 2em auto;
+        font: .9em/1.2 Arial, Helvetica, sans-serif;
+        
+}
+.container{
+    display: grid;
+    /*grid-template-columns: 200px 200px 200px; define três colunas de 200px na grid*/
+    /*grid-template-columns: 1fr 1fr 1fr; distribui as tres colunas, cada uma com uma fração do todo, um terço*/
+    /*grid-template-columns: 2fr 1fr 1fr; distribui duas fraçoes para o primeiro elemento e uma pra cada que sobra*/
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));/*quantas colunas couberem na tela*/
+    grid-gap: 30px 10px; /*define um espaço entre os gridItens, linhas / colunas*/
+    grid-auto-rows: minmax(100px, auto);/*faz que o griditem se adapte ao tamanho do conteudo*/
+}
+
+.container div{
+    border-radius: 5px;
+    padding: 10px;
+    background-color: lightgreen;
+    border: 2px solid rgb(120, 120, 248);
+}
+
 /*BREAKINGPOINTS*/
 
 @media screen and (max-width: 768px){
@@ -48,3 +74,4 @@
         margin-top: 20px;
     }
 }
+
