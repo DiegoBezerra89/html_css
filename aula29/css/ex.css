@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 90%;
+    margin: 30px auto;
+}
+
+#container{
+    font-family: sans-serif;
+    background-color: #ccc;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /*três colunas, quatro grid lines verticais*/
+    grid-gap: 20px;
+    grid-template-rows: 100px 50px 1fr 50px;/*quatro linhas, 5 grid lines horizontais*/
+}
+
+.gridItem{
+    background-color: orange;
+    padding: 15px;
+}
+
+.header{
+    grid-column: 1 / -1; /*da grid line 1 até a última 4*/
+}
+
+.nav{
+    grid-column: 1 / 3; /*da grid line 1 até a 3*/
+}
+
+.content{
+    grid-row: 3;
+    height: 80vh;
+    grid-column: 1 / 3; /*da 1 até a 3*/
+}
+
+.aside{
+    grid-row: 2 / -1; /*da 2 até a última 5*/
+    grid-column: 3 / 4; /*da 3 a 4*/
+}
+
+/* ====== OBS ======
+    O aside e o footer se sobrepõe, é necessário determinar 
+    no css as coordenadas de ambos, pois assim o browser sabe que vc realmente quis sobrescrevê-las.
+*/
+
+.footer{
+    grid-column: 1 / -1; /*da 1 até a última*/
+    grid-row: 4 / 5; /*da  4 a 5*/
+    background: rgba(255, 0, 0 , .5);
+}

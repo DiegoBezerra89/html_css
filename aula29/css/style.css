@@ -50,7 +50,7 @@
     /*grid-template-columns: 2fr 1fr 1fr; distribui duas fraçoes para o primeiro elemento e uma pra cada que sobra*/
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));/*quantas colunas couberem na tela*/
     grid-gap: 30px 10px; /*define um espaço entre os gridItens, linhas / colunas*/
-    grid-auto-rows: minmax(100px, auto);/*faz que o griditem se adapte ao tamanho do conteudo*/
+    grid-auto-rows: minmax(100px, auto);/*faz que o griditem se adapte ao tamanho do conteudo, em altura*/
 }
 
 .container div{
@@ -60,6 +60,13 @@
     border: 2px solid rgb(120, 120, 248);
 }
 
+.one{
+    grid-row: 1 / 4;
+}
+
+.three{
+    grid-column: 2 / -1; /*desde a primeira coluna até a última*/
+}
 /*BREAKINGPOINTS*/
 
 @media screen and (max-width: 768px){
