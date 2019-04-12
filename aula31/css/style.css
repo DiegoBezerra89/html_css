@@ -1,0 +1,70 @@
+#anima-time div{
+    width: 80px;
+    height: 50px;
+    border: 4px solid deepskyblue;
+}
+
+@keyframes anda{
+    0%{
+        transform: translate(0px);
+        background: deeppink;
+    }
+    50%, 75%{
+        height: 80px;
+    }
+    100%{
+        transform: translate(500px);
+        background: deepskyblue;
+    }
+}
+
+#anima-time div:nth-child(1){
+    animation: anda 2s ease-in;
+    /*animation-timing-function: ease-in; começa lento e acelera*/
+}
+
+#anima-time div:nth-child(2){
+    animation: anda 2s ease-in;
+    animation-iteration-count: 2; /*animação ocorrerá duas vezes*/
+    /*animation-iteration-count: infinite; Ocorre pra sempre*/
+}
+
+#anima-time div:nth-child(3){
+    animation: anda 2s ease-in;
+    animation-iteration-count: infinite; /*animação ocorrerá pra sempre HAHAHA*/
+    animation-direction: alternate; /*reverse (do fim para o inicio)| alternate-reverse(inicia do final e vai para o inicio)*/
+}
+
+#anima-time div:nth-child(4){
+    animation: anda 2s ease-in;
+    animation-delay: 3s; /*espera tres segundos e começa a animação*/
+}
+
+#anima-time div:nth-child(5){
+    animation: anda 2s ease-in;
+    animation-delay: 1s;
+    animation-fill-mode: backwards; /*antes da animação começar ele aplicar as propriedades definidas no 0%*/
+    /*animation-fill-mode: forwards;  deixa o elemento no estado 100% quando a animação acaba*/
+}
+
+#anima-time div:nth-child(6){
+    animation: anda 2s ease-in;
+    animation-delay: 1s;
+    /*animation-fill-mode: backwards; /*antes da animação começar ele aplicar as propriedades definidas no 0%*/
+    animation-fill-mode: forwards;  /*deixa o elemento no estado 100% quando a animação acaba*/
+}
+
+#anima-time div:nth-child(7){
+    animation: anda 2s ease-in;
+    animation-direction: alternate;
+    animation-play-state: running; /*determina o estado do elemento, neste caso running*/
+    animation-iteration-count: infinite;
+}
+
+#anima-time div:nth-child(7):hover{
+    animation-play-state: paused;/*ao posicionar o mouse sobre ele, ele muda para o estado paused, para o movimento*/
+}
+
+/* ===============  SHORTHAND ===================*/
+
+/* animation: name duration timing-function, delay iteration-count direction fill-mode play-state*/
