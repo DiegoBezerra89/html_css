@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Animation</title>
+</head>
+<body>
+    <h1>Animações com CSS</h1>
+    <hr>
+    <h2>Transition</h2>
+    <p>Para falarmos de animação é necessário dar atenção a propriedade transition, que deixa a animação mais fluida:</p>
+    <ul>
+        <li>transition-property: diz qual a propriedade a sofrer a transição.</li>
+        <li>transition-duration: tempo em que a transição ocorre.</li>
+        <li>transition-delay: tempo de atraso da transição.</li>
+        <li>transition-timing-function: maneira que a transição se comporta.</li>
+        <li>transition: property duration timing-funciton delay;</li>
+    </ul>
+    <h3>Múltiplas transições:</h3>
+    <pre>
+        <code>
+    transition: property1 duration1 timing-function1 delay1,
+                property2 duration2 timing-function2 delay2;
+    
+    transition-property:            property1, property2;
+    transition-duartion:            duartion1, duration2;
+    transition-timing-function:     func1, func2;
+    transition-delay:               delay1, delay2;
+        </code>
+    </pre>
+    <hr>
+    <h3>Evento gatilho</h3>
+    <p>Para a transição entrar em funcionamento é necessário um evento para acioná-la: hover, :active, focus, etc. Sempre é necessária uma interação do usuário.</p>
+    <h3>Animation e Keyframes</h3>
+    <p>Keyframes cria uma animação, são quadros intermediários que fazem que a animação aconteça. Transições mais complexas, não dependem de interação do usuário, e possui maior controle sobre a animação criada.</p>
+    <hr>
+    <h2>Timeline</h2>
+    <img src="images/timeline.png" width="500px"><br>
+    <p>Neste caso há três estados de animaçao, cada um com 1 segundo de duração, sempre determinar os keyframes em porcentagem, o tempo da duração de cada etapa do keyframe depende do tempo total da animação.</p>
+    <h3>Keyframes ou quadros-chave</h3>
+    <img src="images/keyframe.png" width="500px">
+    <p>Pontos cruciais para que a animação aconteça. Eles que ditam como serão calculados os frames intermediários, feitos pelo computador automaticamente.<br>
+    <em>Somente valores numéricos podem ser animados: 10px, .5, 58%, 10em, #cf0, red.</em><br>
+    Valores como: auto, arial, hidden, entre outros não são numéricos.
+    </p><hr>
+    <h4>Transform e opacity</h4>
+    <p>
+        São as propriedades mais performáticas para animação.
+    </p>
+    <h4>will-change</h4>
+    <p>Se preciso utilize esta propriedade para o browser se preparar previamente para o uso da animação. OBS: SÓ UTILIZE QUANDO NECESSÁRIO! </p><hr>
+    <h2>Keyframes</h2>
+    <pre>
+    <code>
+        @keyframes animaCor{                @keyframes animaCor{
+            from{                               0% {
+                color: red;                        color: red;         
+            }                                   }
+            to{                                 100% {        
+                color: blue;                        color: blue;
+            }                                   }                
+        }                                   }                
+    </code>
+    </pre>
+    <p>Ambos fazem a mesma coisa. Já que todos modificam o elemento completamente em duas etapas, início e fim.</p>
+    <pre>
+        <code>
+            @keyframes animaCor{       
+                0%{                        
+                    color: red;               
+                }                                   
+                50%{                   
+                    color: blue;
+                }  
+                100%{
+                    color: orange;
+                }                               
+            }                                                  
+        </code>
+    </pre>
+    <p>Este keyframe é acionado em três etapas.</p>
+    <h4>Aplicando o keyframe</h4>
+    <pre>
+        <code>
+            .elemento{
+                animation: animaCor 1s; /*shorthand*/
+                /* maneira completa
+                  animation-name: animaCor;
+                  animation-duration: 1s;*/
+            }
+        </code>
+    </pre><hr>
+    <h3>Animation</h3>
+    <p>Possui diversas propriedades:</p>
+    <ul>
+        <li>animation-name</li>
+        <li>animation-duration</li>
+        <li>animation-delay</li>
+        <li>animation-timing-function</li>
+        <li>animation-iteration-count</li>
+        <li>animation-direction</li>
+        <li>animation-fill-mode</li>
+        <li>animation-play-state</li>
+    </ul>
+
+    <p><a href="../calculadora/index.html">&lt;&lt;Voltar</a> | <a href=" ../aula31/index.html">Avançar&gt;&gt;</a><br><br></p>
+</body>
+</html>
