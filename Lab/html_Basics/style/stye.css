@@ -18,6 +18,10 @@ body {
     color: #222;
 }
 
+#main{
+    height: 100vw;
+}
+
 #main-header {
     width: 100%;
     padding: 30px;
@@ -75,6 +79,7 @@ body {
     width: 30%;
     margin: 7px 0px;
     background-color: #ddd;
+    height: 100%;
 }
 
 .footer {
@@ -92,4 +97,7 @@ body {
     }
 }
 
-
+.html-image {
+    width: 100%;
+    margin: 10px 0px;
+}
