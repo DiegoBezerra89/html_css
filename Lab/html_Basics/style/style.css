@@ -39,15 +39,16 @@ body {
     background-color: rgb(3, 36, 63);;
     padding: 10px;
     list-style: none;
-    
 }
 
 .main-nav--div {
     float: left;
     width: 15%;
     text-align: center;
-    margin-top: 7px;
-    overflow: auto;
+    margin-top: 0px;
+    position: sticky;
+    top: 0;
+    margin-left: 0;
 }
 
 .main-nav--div a {
@@ -58,19 +59,25 @@ body {
     text-decoration: none;
     font-weight: 400;
     background-color: rgb(3, 36, 63);
-    transition: background-color .7s;
 }
 
 .main-nav--div a:hover {
     color: rgb(3, 36, 63);;
     background-color: #2ada71;
+    transition: background-color .7s;
 }
 
+.main-nav--div a:active {
+    color: rgb(3, 36, 63);
+    background-color: #9bffc3;
+    transition: background-color .2s;
+}
 
 #main-section {
     padding: 20px;
     float: left;
     width: 55%;
+    height: 2000px;
 }
 
 #aside{
@@ -79,7 +86,40 @@ body {
     width: 30%;
     margin: 7px 0px;
     background-color: #ddd;
-    height: 100%;
+    height: 38vw;
+    position: sticky;
+    top: 0;
+    
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.image-container {
+    float: left;
+    width: 33.3%;
+    padding: 10px;
+    margin: 10px;
+}
+
+.images {
+    opacity: 0.3;
+    transition: opacity 1s;
+}
+
+.images:hover {
+    opacity: 1;
+}
+
+.aside-about p {
+    color: rgb(75, 75, 75);
+    overflow: visible;
+    font-size: 56px;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .footer {
@@ -88,7 +128,6 @@ body {
     text-align: center;
     padding: 20px;
     clear: both;
-    
 }
 
 @media only screen and (max-width: 620px) {
@@ -101,3 +140,18 @@ body {
     width: 100%;
     margin: 10px 0px;
 }
+
+.box{
+    float: left;
+    width: 50%;
+    height: 400px;
+    text-align: center;
+    padding: 25%;
+}
+
+.side-menu{
+    position: relative;
+    left: 199px;
+    display: none;
+}
+

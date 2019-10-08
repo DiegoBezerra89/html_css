@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/stye.css">
+    <link rel="stylesheet" href="style/style.css">
     <title>Responsive design</title>
 </head>
 <body>
@@ -14,12 +14,19 @@
             <h1 class="main-header--title">Hello World</h1>
         </div>
     </header>
-    <main id="main-content">
-        <div class="main-nav--div">
-            <a href="#">Menu</a>
+    <nav class="main-nav--div">
+        <div>
+            <a href="#" id="menu">Menu</a>
+                <div class="side-menu">
+                    <a href="#">Opção 1</a>
+                    <a href="#">Opção 2</a>
+                    <a href="#">Opção 3</a>
+                </div>
             <a href="#">About</a>
             <a href="#">Contact</a>
         </div>
+    </nav>
+    <main id="main-content">
         <section id="main-section">
             <article class="main-article1">
                 <h2>Texto exemplo</h2>
@@ -27,19 +34,31 @@
                 Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
                 ramdomics textis
                 </p>
-                <img class="html-image" src="html.jpg" />
+                <div class="clearfix">
+                    <img class="images" src="html.png" />
+                    <img class="images" src="css.png" />
+                    <img class="images" src="js.png" />
+                </div>
+                
                 <p>
                 Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
                 ramdomics textis  
                 </p>
+            </div>
+            <div class="clearfix">
+                <div class="box" style="background-color: cadetblue">
+                    Box
+                </div>
+                <div class="box" style="background-color: rgb(0, 238, 247)">
+                    Box 
+                </div>  
             </div>
         </section>
         <aside id="aside">
             <div class="aside-about">
                 <h2 class="aside-about--title">About</h2>
                 <p>
-                Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
-                ramdomics textis  
+                Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio.
                 </p>
             </div>
         </aside>
@@ -47,5 +66,16 @@
     <div class="footer">
         <p class="main-footer--text">Copyright 2019</p>
     </div>
+    <script>
+        var menu = document.querySelector('.side-menu');
+        menu.addEventListener("mouseout", hideMenu);
+        document.getElementById('menu').addEventListener("mouseover", showMenu);
+        function showMenu() {
+                menu.style.display = 'block';
+        }
+        function hideMenu() {
+                menu.style.display = 'none';
+        }
+    </script>
 </body>
 </html>
