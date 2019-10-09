@@ -15,16 +15,18 @@
         </div>
     </header>
     <nav class="main-nav--div">
-        <div>
-            <a href="#" id="menu">Menu</a>
-                <div class="side-menu">
-                    <a href="#">Opção 1</a>
-                    <a href="#">Opção 2</a>
-                    <a href="#">Opção 3</a>
-                </div>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-        </div>
+        <ul class="menu">
+            <li><a href="#" class="menu-btn">Menu</a>
+                <ul>
+                    <li><a href="http://palmeiras.com.br" target="_blank">Palmeiras</a></li>
+                    <li><a href="http://www.saopaulofc.net/spfc" target="_blank">São Paulo</a></li>
+                    <li><a href="https://www.santosfc.com.br/" target=_blank>Corinthians</a></li>
+                    <li><a href="https://www.corinthians.com.br/" target=_blank>Santos</a></li>
+                </ul>
+            </li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
     </nav>
     <main id="main-content">
         <section id="main-section">
@@ -66,7 +68,7 @@
     <div class="footer">
         <p class="main-footer--text">Copyright 2019</p>
     </div>
-    <script>
+    <!--<script>
         var menu = document.querySelector('.side-menu');
         menu.addEventListener("mouseout", hideMenu);
         document.getElementById('menu').addEventListener("mouseover", showMenu);
@@ -76,6 +78,6 @@
         function hideMenu() {
                 menu.style.display = 'none';
         }
-    </script>
+    </script>-->
 </body>
 </html>

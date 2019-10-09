@@ -49,6 +49,7 @@ body {
     position: sticky;
     top: 0;
     margin-left: 0;
+    z-index: 1;
 }
 
 .main-nav--div a {
@@ -149,9 +150,32 @@ body {
     padding: 25%;
 }
 
-.side-menu{
+.menu li {
     position: relative;
-    left: 199px;
-    display: none;
 }
+
+.menu li ul {
+    position: absolute;
+    display: none;
+    z-index: 1;
+    box-shadow: 2px 2px 8px grey;
+}
+
+.menu li ul li {
+    width: 160px;
+}
+
+.menu li:hover ul{
+    list-style-type: none;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 200px;
+}
+
+.menu li ul li:hover .menu-btn {
+    background-color: #2ada71;
+    color: rgb(3, 36, 63);
+}
+
 

@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: arial, helvetica, sans-serif;
+}
+
+/*
+.menu {
+    list-style-type: none;
+    float: left;
+    border: 1px solid #c0c0c0;
+}
+
+.menu li {
+    position: relative;
+    float: left;
+    border-right: 1px solid #c0c0c0;
+    list-style-type: none; 
+}
+
+.menu li a {
+    background-color: #7c7c7c;
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+}
+
+.menu li a:hover {
+    background-color: #c0c0c0;
+}
+
+.menu li ul {
+    position: absolute;
+    display: none;
+    top: auto;
+    left: 0;
+}
+
+.menu li:hover ul, .menu li.over ul {
+    display: block;
+    z-index: 1;
+}
+
+.menu li ul li {
+    width: 150px;
+}
+
+.dropdown {
+    display: block;
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    padding: 50px;
+    box-shadow: 3px 3px .5px black;
+    background-color: #7c7c7c;
+    max-width: 160px;
+    position: absolute;
+    left: 160px;
+}
+
+.dropdown:hover .dropdown-content { /*Quando hover no .dropdown o dropdown-content display block
+    display: block;
+}
+
+.dropdown-content:hover {
+    background-color: #c0c0c0;
+}*/
+
+.dropbtn {
+    padding: 8px 16px;
+    color: white;
+    background-color: #aaa;
+    border: none;
+    cursor: pointer;
+    width: 120px;
+    font-size: 16px;
+}
+
+.dropbtn:hover {
+    background-color: #888;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #888;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: #ccc;
+    color: #333;
+    left: 100%;
+    top: 0;
+    position: absolute;
+    min-width: 0px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,.2);
+    z-index: 1;
+    max-width: 160px;
+    transition: width 0.4s ease-in-out;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.dropdown-content a:hover {
+    background-color: #aaa;
+    
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    width: 160px;
+}
+
+.teste {
+    width:150px;
+    background-color: #888;
+    padding: 30px;
+    transition: width 0.4s ease-in-out;
+}
+
+.teste:hover {
+    width: 100%;
+}
