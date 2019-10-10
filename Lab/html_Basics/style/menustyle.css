@@ -6,6 +6,7 @@
 
 body {
     font-family: arial, helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
 /*
@@ -131,7 +132,7 @@ body {
 
 .teste {
     width:150px;
-    background-color: #888;
+    background-image: linear-gradient(to bottom right, red, blue);
     padding: 30px;
     transition: width 0.4s ease-in-out;
 }
@@ -139,3 +140,189 @@ body {
 .teste:hover {
     width: 100%;
 }
+
+.shadow {
+    width: 100px;
+    padding: 8px 16px;
+    background-color: #fcfcfc;
+    border: 1px solid grey;
+    margin: 20px 20px;
+    border-radius: 3px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    position: relative;
+}
+
+.shadow::after {
+    content: '';
+    position: absolute;
+    z-index: -1; /* hide shadow behind image */
+    -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);        
+    width: 70%; 
+    left: 15%; /* one half of the remaining 30% */
+    height: 10px;
+    bottom: 0;
+}
+
+.card {
+    width: 400px;
+    margin: 100px;
+    padding: 20px;
+    border: 1px solid #aaa;
+    box-shadow: 1px 2px 4px rgba(0,0,0,.2);
+    position: relative;
+    background: #fcfcfc;
+}
+
+.card::after {
+    content: "";
+    position: absolute;
+    width: 70%;
+    left: 15%;
+    border-radius: 50%;
+    box-shadow: 0px 10px 30px rgba(0,0,0,.2);
+    z-index: -1;
+    bottom: 0;
+    height: 50px;
+}
+
+.card-text{
+    padding: 40px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.card-image {
+    width: 100%;
+    transition: filter .3s;
+    cursor: pointer;
+    backface-visibility: hidden;
+}
+
+.card-image:hover {
+    filter: blur(2px);
+    box-shadow: 1px 2px 4px rgba(0,0,0,.2);
+    border: 2px 2px 2px rgba(0,0,0,.2);
+}
+
+.card:hover .middle {
+    opacity:1;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    z-index: 1;
+}
+
+
+.veja {
+    color: white;
+    font-family: Georgia,'Times New Roman', Times, serif;
+    font-weight: bolder;
+    padding: 8px 20px;
+    text-decoration: none;
+    transition: box-shadow .5s;
+    background-color: blue;
+    letter-spacing: 2px;
+    opacity: .8;
+}
+
+
+
+.veja:hover {
+    box-shadow: 0px 3px 5px rgba(0,0,0,.8);
+    cursor: pointer;
+}
+
+.vertical {
+    writing-mode: vertical-lr;
+    font-size: 300px;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #333;
+    position: absolute;
+    top:0;
+    left: 10px;
+    z-index: -1;
+    transition: transform 1s;
+}
+
+.vertical span {
+    color: white;
+    background-color: blue;
+}
+
+.vertical:hover {
+    transform: rotate(-90deg);
+}
+
+.circle::after {
+    content: "";
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    opacity: .7;
+    position: absolute;
+    top: 50px;
+    right: -10px;
+    border-radius: 50%;
+    transition: transform .7s;
+    z-index: -1;
+    transition-timing-function:  cubic-bezier(1,-0.36,.03,1.44);
+}
+
+.square::after {
+    content: "";
+    width: 700px;
+    height: 600px;
+    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+    opacity: .5;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    transform: rotate(150deg);
+    transition: transform 1s; 
+    transition-timing-function: cubic-bezier(1,-0.36,.03,1.44);
+    z-index: -1;
+}
+
+.effect {
+    position: relative;
+    width: 50%;
+    text-align: right;
+    float: right;
+    
+}
+
+@keyframes texto {
+    0% {right: 300px; opacity: 0;}
+    80% {right: -20px;}
+    90% {right:20px;}
+    100% {right: 0px; opacity: 1;}
+}
+
+.effect p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-right: 30px;
+    text-indent: right;
+    animation-name: texto;
+    animation-duration: 1.2s;
+    position: absolute;
+}
+
+.effect:hover .circle::after {
+    transform: translate(20px, 30px);
+}
+
+.effect:hover .square::after {
+    transform: translate(30px, 20px);
+}
+
