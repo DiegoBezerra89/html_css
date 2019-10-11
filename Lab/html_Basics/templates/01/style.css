@@ -23,4 +23,24 @@ body {
 
 img {
     width: 100%;
+    height: auto;
+}
+
+.top{
+    height: 100Vw;
+}
+
+.top-container {
+    padding: 150px;
+    text-indent: right;
+}
+
+.top-container--title {
+    font-size: 86px;
+    
+}
+
+.top-container--text {
+    letter-spacing: 3px;
+    line-height: 1.5;
 }
