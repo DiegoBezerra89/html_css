@@ -4,14 +4,23 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: arial, helvetica, sans-serif;
+    font-family: 'circularstd-book', helvetica, sans-serif;
     overflow-x: hidden;
 }
- 
+
 @font-face {
-    font-family: mainfont;
+    font-family: mainfontbold;
     src: url(../fonts/CircularStd-Bold.otf);
+}
+
+@font-face {
+    font-family: mainfontbook;
+    src: url(../fonts/CircularStd-Book.otf);
 }
 
 /*
@@ -136,10 +145,18 @@ body {
 }
 
 .teste {
-    width:150px;
+    width:550px;
     background-image: linear-gradient(to bottom right, red, blue);
     padding: 30px;
     transition: width 0.4s ease-in-out;
+}
+
+.teste a{
+    text-decoration: none;
+    color: #fcfcfc;
+    font-weight: bolder;
+    font-family: 'mainfontbold', arial;
+    font-size: 24px;
 }
 
 .teste:hover {
@@ -178,6 +195,7 @@ body {
     box-shadow: 1px 2px 4px rgba(0,0,0,.2);
     position: relative;
     background: #fcfcfc;
+    float: right;
 }
 
 .card::after {
@@ -227,34 +245,35 @@ body {
 
 
 .veja {
-    color: #333;
-    font-family: mainfont,'Times New Roman', Times, serif;
+    color: #fcfcfc;
+    font-family: mainfontbold,'Times New Roman', Times, serif;
     font-weight: bolder;
     padding: 8px 20px;
     text-decoration: none;
-    transition: box-shadow .5s;
-    background-color: rgb(255, 230, 0);
+    transition: box-shadow .5s, text-shadow .5s;
     letter-spacing: 2px;
-    border: 3px solid #333;
+    border: 3px solid #fcfcfc;
 }
 
 
 
 .veja:hover {
-    box-shadow: 0px 3px 5px rgba(0,0,0,.8);
-    cursor: pointer;
+    box-shadow: 2px 3px 4px rgba(0,0,0,0.5), 0 4px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 2px 3px 3px rgba(0,0,0,0.7);
+}
+
+.veja:active {
+    box-shadow: none;
 }
 
 .vertical {
-    writing-mode: vertical-lr;
-    font-size: 300px;
+    writing-mode: vertical-rl;
+    font-size: 150px;
     font-weight: bolder;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #333;
     position: absolute;
-    top:0;
-    left: 10px;
-    z-index: -1;
+    left: 210px;
     transition: transform 1s;
 }
 
@@ -285,7 +304,7 @@ body {
 .square::after {
     content: "";
     width: 700px;
-    height: 600px;
+    height: 200px;
     background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
     opacity: .5;
     position: absolute;
@@ -302,7 +321,8 @@ body {
     width: 50%;
     text-align: right;
     float: right;
-    
+    clear: both;
+    height: 500px;
 }
 
 @keyframes texto {
@@ -313,14 +333,22 @@ body {
 }
 
 .effect p {
-    font-family: mainfont, Times, serif;
-    font-size: 50px;
-    font-weight: bolder;
+    font-family: mainfontbook, Times, serif;
+    font-size: 24px;
+    font-weight: normal;
     margin-right: 30px;
-    text-indent: right;
+    text-align: left;
     animation-name: texto;
     animation-duration: 1.2s;
     position: absolute;
+    color: #222;
+}
+
+.effect h2 {
+    font-size: 50px;
+    text-align: left;
+    color: #222;
+    font-family: mainfontbold;
 }
 
 .effect:hover .circle::after {
@@ -329,5 +357,64 @@ body {
 
 .effect:hover .square::after {
     transform: translate(30px, 20px);
+}
+
+#flex-container {
+    display: flex;
+    background-color: #1CB5E0;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 100px;
+}
+
+#flex-container > div {
+    width: 300px;
+    background-color: #fcfcfc;
+    color: #1CB5E0;
+    font-family: 'mainfontbold', arial;
+    margin: 10px;
+    padding: 50px;
+    text-align: center;
+    height: 350px;
+    clear: both;
+    transition: box-shadow .5s;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#flex-container > div:hover {
+    box-shadow: 2px 3px 16px rgba(0,0,0, 0.2), 4px 4px 16px rgba(0,0,0, 0.2);
+    
+}
+
+/**************************************************/
+
+#grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: blue;
+    padding: 10px;
+    margin-top: 30px;
+    grid-column-gap: 5px;
+    grid-row-gap: 30px;
+}
+
+.grid-item {
+    background-color: white;
+    border: 1px solid blue;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+}
+
+#grid-container :nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
 }
 

@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', 'open-sans';
+}
+
+#main-container {
+    display: flex;
+}
+
+#left {
+    width: 50%;
+    background: linear-gradient(90deg, rgb(0, 255, 200) 0%, rgb(119, 252, 223) 100%);
+}
+
+#right {
+    width: 50%;
+}
+
+img {
+    width: 100%;
+}
