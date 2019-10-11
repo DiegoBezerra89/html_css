@@ -8,6 +8,11 @@ body {
     font-family: arial, helvetica, sans-serif;
     overflow-x: hidden;
 }
+ 
+@font-face {
+    font-family: mainfont;
+    src: url(../fonts/CircularStd-Bold.otf);
+}
 
 /*
 .menu {
@@ -222,15 +227,15 @@ body {
 
 
 .veja {
-    color: white;
-    font-family: Georgia,'Times New Roman', Times, serif;
+    color: #333;
+    font-family: mainfont,'Times New Roman', Times, serif;
     font-weight: bolder;
     padding: 8px 20px;
     text-decoration: none;
     transition: box-shadow .5s;
-    background-color: blue;
+    background-color: rgb(255, 230, 0);
     letter-spacing: 2px;
-    opacity: .8;
+    border: 3px solid #333;
 }
 
 
@@ -272,9 +277,9 @@ body {
     top: 50px;
     right: -10px;
     border-radius: 50%;
-    transition: transform .7s;
+    transition: transform 1s;
     z-index: -1;
-    transition-timing-function:  cubic-bezier(1,-0.36,.03,1.44);
+    /*transition-timing-function:  cubic-bezier(1,-0.36,.03,1.44);*/
 }
 
 .square::after {
@@ -286,9 +291,9 @@ body {
     position: absolute;
     top: 10px;
     left: 20px;
-    transform: rotate(150deg);
+    transform: rotate(90deg);
     transition: transform 1s; 
-    transition-timing-function: cubic-bezier(1,-0.36,.03,1.44);
+    /*transition-timing-function: cubic-bezier(1,-0.36,.03,1.44);*/
     z-index: -1;
 }
 
@@ -308,7 +313,7 @@ body {
 }
 
 .effect p {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: mainfont, Times, serif;
     font-size: 50px;
     font-weight: bolder;
     margin-right: 30px;
