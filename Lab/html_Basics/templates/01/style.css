@@ -19,6 +19,7 @@ body {
 
 #right {
     width: 50%;
+    margin-top: 0;
 }
 
 img {
@@ -26,21 +27,63 @@ img {
     height: auto;
 }
 
-.top{
-    height: 100Vw;
+.top img {
+    height: auto;
 }
 
+.top{
+    height: 50vw;
+    background-position: top;
+}
+
+.seta{
+    font-size: 45px;
+    margin-top: 50px;
+    position: relative;
+    transition: transform .7s;
+    transform: translateY(0px);
+    cursor: pointer;
+}
+
+.seta:hover {
+    transform: translateY(20px);
+}
+
+
 .top-container {
-    padding: 150px;
-    text-indent: right;
+    padding: 250px 150px 150px 350px;;
+    text-align: right;
+    width: 100%;
+    
 }
 
 .top-container--title {
     font-size: 86px;
-    
+    margin-bottom: 60px;
 }
 
 .top-container--text {
+    font-size: 24px;
     letter-spacing: 3px;
     line-height: 1.5;
+}
+
+.top-container--right {
+    padding: 50px 100px;
+    background-color: black;
+    color: white;
+    height: 100%;
+}
+
+.top-container--right-title {
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+
+.top-container--right-text {
+    line-height: 1.5;
+}
+
+.main-1--title {
+    letter-spacing: 3px;;
 }
