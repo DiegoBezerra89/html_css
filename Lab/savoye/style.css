@@ -1,0 +1,95 @@
+/*
+Mas devo explicar-lhe como nasceu toda essa idéia equivocada de denunciar o prazer e louvar a dor, e darei a você um relato completo do sistema e expor os ensinamentos reais do grande explorador da verdade, o mestre-construtor do ser humano. felicidade. Ninguém rejeita, não gosta ou evita o prazer em si, porque é prazer, mas porque aqueles que não sabem como buscar o prazer encontram racionalmente conseqüências extremamente dolorosas. Tampouco existe alguém que ame, persiga ou deseje obter dor por si mesmo, porque é dor, mas porque ocasionalmente ocorrem circunstâncias nas quais labuta e dor podem lhe proporcionar um grande prazer. Para dar um exemplo trivial, qual de nós já realiza exercícios físicos trabalhosos, exceto para obter alguma vantagem com isso? Mas quem tem o direito de encontrar falhas em um homem que escolhe desfrutar de um prazer que não tem consequências irritantes, ou que evita uma dor que não produz prazer resultante? "
+*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'open sans', Arial, Helvetica, sans-serif;
+    padding: 20px;
+    box-shadow: 0 0 16px rgba(0,0,0,.5);
+}
+
+.images {
+    width: 100%;
+}
+
+#main-header {
+    
+}
+
+#menu {
+    
+}
+
+.main-nav--ul {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    width: 100%;
+    display: block;
+    background-color: #222;
+    padding: 20px;
+}
+
+.main-nav--ul li {
+    color: #fff;
+    padding: 10px 40px;
+    display: inline-block;
+}
+
+#banner {
+    display: block;
+    height: 60vh;
+    background-image: url("./images/mesaFlores.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: cover;
+    text-align: center;
+    color: #fcfcfc;
+}
+
+.banner-container {
+    margin: auto;
+}
+
+.banner-container--logo img {
+    width: 600px;
+    margin: -30px;
+}
+
+#intro {
+    text-align: center;
+    padding: 10px 40px;
+    margin: 5px 0; 
+}
+
+#intro-box {
+    margin-bottom: 100px;
+}
+
+.intro-box--title {
+    margin-bottom: 50px;
+    font-family: 'Merriweather', serif;
+}
+
+.intro-box--text {
+    line-height: 1.5;
+}
+
+#intro-image {
+    margin: 50px 0;
+}
+
+.concept {
+    width: 70%;
+    margin: auto;
+}
